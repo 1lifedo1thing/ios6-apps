@@ -4,12 +4,13 @@ A collection of native app recreations inspired by the skeuomorphic design of iO
 
 ## Getting started
 
-Open `iOS6Apps.xcworkspace` at the collection root and select the app's scheme. Weather uses `WeatherSix`; Notes uses `NotesSix`; Calculator uses `CalculatorSix`. All require iOS 17 or later.
+Open `iOS6Apps.xcworkspace` at the collection root and select the app's scheme. Weather uses `WeatherSix`; Notes uses `NotesSix`; Calculator uses `CalculatorSix`; Compass uses `CompassSix`. All require iOS 17 or later.
 
 | App | Project | Documentation |
 | --- | --- | --- |
 | Weather | `apps/weather/WeatherSix.xcodeproj` | [Run instructions](apps/weather/README.md), [Verification record](apps/weather/docs/verification.md) |
 | Notes | `apps/notes/NotesSix.xcodeproj` | [Run instructions](apps/notes/README.md), [Verification record](apps/notes/docs/verification.md) |
+| Compass | `apps/compass/CompassSix.xcodeproj` | [Run instructions](apps/compass/README.md), [Verification record](apps/compass/docs/verification.md) |
 | Calculator | `apps/calculator/CalculatorSix.xcodeproj` | [Run instructions](apps/calculator/README.md), [Verification record](apps/calculator/docs/verification.md) |
 
 Weather defaults to Celsius, and its app icon displays `23°`. Use Current Location requests foreground location access and loads live weather. If access was denied, Open Settings provides a recovery path. Set a simulated location using Simulator → Features → Location when running on Simulator.
@@ -19,6 +20,8 @@ The weather interface follows the iPhone's system or app language in English or 
 Notes recreates the brown leather navigation, yellow ruled paper, original font choices, note list, search, previous/next controls, and paper-crumpling deletion. Its full-screen framing follows Weather's city-management layout. It saves text automatically on the device and uses the same system/per-app Chinese and English language rules as Weather. User-written text retains its original language. Run with `--demo` for an isolated sample notebook; normal launches start with an empty local notebook.
 
 Calculator recreates the olive LCD, glossy memory and number keys, tall orange equals, and rotation-driven scientific keypad. It includes real arithmetic/scientific operations, memory, swipe-to-delete, clipboard actions, and saved calculation state, using the same English/Simplified Chinese language rules as Weather.
+
+Compass recreates the iOS 6 walnut cabinet, brass rim, ivory compass rose, bearing, coordinates, Maps shortcut, and magnetic/true-north settings. Physical devices use Core Location heading and location updates. Simulator previews are explicitly labeled sample data. It uses the same English/Simplified Chinese language rules as Weather.
 
 ## Shared design language
 
@@ -34,6 +37,14 @@ ios6-apps/
 ├── README.md
 ├── iOS6Apps.xcworkspace/
 ├── apps/
+│   ├── compass/
+│   │   ├── CompassSix.xcodeproj/
+│   │   ├── CompassSix/
+│   │   ├── CompassSixTests/
+│   │   ├── CompassSixUITests/
+│   │   ├── scripts/
+│   │   ├── docs/
+│   │   └── README.md
 │   ├── calculator/
 │   │   ├── CalculatorSix.xcodeproj/
 │   │   ├── CalculatorSix/

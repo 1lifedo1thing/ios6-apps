@@ -1,0 +1,2 @@
+"CFBundleDisplayName" = "指南针";
+"NSLocationWhenInUseUsageDescription" = "指南针使用您的位置显示经纬度、计算真北，并在地图中打开当前位置。";

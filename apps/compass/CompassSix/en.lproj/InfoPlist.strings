@@ -1,0 +1,2 @@
+"CFBundleDisplayName" = "Compass";
+"NSLocationWhenInUseUsageDescription" = "Compass uses your location to show coordinates, calculate true north, and open your position in Maps.";
