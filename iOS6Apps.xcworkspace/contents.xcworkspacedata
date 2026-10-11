@@ -8,4 +8,6 @@
    </FileRef>
    <FileRef location="group:apps/compass/CompassSix.xcodeproj">
    </FileRef>
+   <FileRef location="group:apps/clock/ClockSix.xcodeproj">
+   </FileRef>
 </Workspace>

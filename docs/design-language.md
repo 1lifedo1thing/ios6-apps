@@ -17,13 +17,21 @@ Use this language where it helps the particular screen. Do not add a navigation 
 
 Classify by the actual screen structure and reference, not simply whether a view is named "Detail" or "Settings." A screen without a navigation bar does not need one added. A historical content panel with rounded glass edges may retain them. If no pattern here fits, keep the screen's own design and document its reference and adaptation. A new app may use different patterns on its main page and supporting pages.
 
+## Background continuity on every screen
+
+When the active screen's body material extends behind the status area, extend that same material behind the bottom safe area as well. Continue its color and texture at both ends, including on specialized main screens such as Clock. This rule does not require adding a navigation bar or adopting the Notes/settings layout.
+
+Keep navigation bars and tab bars within their own panels. Their backgrounds must not silently paint over the body's safe-area extension. For example, Clock's blue world-clock pinstripes continue above its navigation bar and below its black tab bar; alarm and sound settings use light pinstripes at both ends. A black tab bar does not imply a black bottom strip on a blue or light page. In SwiftUI, explicitly constrain panel backgrounds when a shape-style background would otherwise ignore safe areas; apply full-display extension to the body background alone.
+
+Keep controls, labels, and scrolling content inside their appropriate safe areas. Verify both the top and bottom on a notched/home-indicator device, then check landscape and presented settings. A top-only screenshot is insufficient evidence of continuity. Preserve specialized compositions such as Weather's forecast glass panel and extend their existing surrounding body surface without adding caps, wrappers, or another device mask.
+
 ## Screen framing
 
-For screens that use the Notes/settings-style frame, separate three responsibilities: a continuous body surface, an independent navigation panel, and safe-area-aware content and controls. The rules below apply to that frame; they do not replace specialized main-page layouts.
+For screens that use the Notes/settings-style frame, separate three responsibilities: a continuous body surface, an independent navigation panel, and safe-area-aware content and controls. The background-continuity rule above also applies to specialized main-page layouts; the remaining framing details below do not replace their historical composition.
 
 1. Extend the current screen's body background behind the system status area. Its color, texture, and relevant pattern must continue through that area. A yellow paper page has a yellow paper status background; a gray pinstripe page has a gray pinstripe status background; a dark linen page has a dark linen status background.
 2. Keep the navigation bar as an independent panel below the status area. Notes uses brown leather; Weather management uses a dark glossy panel; classic printer settings use blue-gray chrome. Do not extend the navigation material upward merely to fill the status area.
-3. Fill the display behind the bottom safe area with the body surface. Avoid an unpainted strip, a duplicated footer spacer, or a second background whose edge appears above the home indicator.
+3. Fill the display behind the bottom safe area with the same body surface used behind the status area. Avoid an unpainted strip, a duplicated footer spacer, or a tab-bar background bleeding beyond its panel and replacing the body material near the home indicator.
 4. Keep text, interactive controls, and scrolling content clear of the status area, Dynamic Island/notch, home indicator, and keyboard. Extending a decorative background does not authorize extending controls into those regions.
 5. Let the device display supply the screen's outer corners. Do not add an inset rounded wrapper, top/bottom cap, black gutter, or duplicate device mask merely to imitate the simulator frame or force a common template. Historically appropriate content panels, such as Weather's rounded glass forecast panel, and individual grouped lists/buttons may retain their own corners.
 6. Keep the framing consistent in portrait and landscape. A landscape notch may require control insets; it must not reveal gaps in the decorative body background.
@@ -37,9 +45,10 @@ Within this frame, the status background is determined by the active screen, inc
 Treat materials as functional surfaces: paper carries written content, leather or shaded chrome forms navigation panels, linen supports management/settings screens, and glass or metal gives controls visible depth. Select materials from the app's historical reference rather than applying brown leather to every app.
 
 - Use subtle, stable grain or fibers at the appropriate scale. Textures should remain consistent during editing, scrolling, and state changes rather than regenerating random noise.
-- Preserve pattern alignment at the boundary between the body and status area. Paper rules and margins must still align with the content they organize; a separately restarted texture must not create a visible seam.
+- Preserve pattern alignment where the body meets both the status and bottom safe areas. Paper rules and margins must still align with the content they organize; a separately restarted texture must not create a visible seam.
 - Use a consistent light source: light along upper edges, darker lower edges, restrained inset lines, and small contact shadows. Embossed light navigation text usually has a dark shadow just above its baseline; dark text on light controls may have a fine light edge below.
 - Give buttons a filled surface, bevel/border, and visible pressed/disabled states. Use the app's classic back-arrow shape and glossy primary action treatment where the historical reference supports them.
+- Give wheel pickers a recessed rim, restrained cylindrical shading, and a clear selection band. Preserve visible column separators with fine dark edges and highlights so adjacent drums read as separate physical parts. Keep unit labels stationary beside the selected values, and keep all decorative overlays out of hit testing and accessibility.
 - Keep fine texture and shading subordinate to readable text. Avoid heavy blur, oversized floating shadows, translucent modern glass, or decorative noise that obscures controls.
 
 Textures and artwork should be original drawings or appropriately licensed assets. Historical screenshots are references, not bundled production assets.
@@ -118,7 +127,7 @@ Approved Notes framing is illustrated by the [paper-backed status area](../apps/
 1. Read this guide and identify a historical reference for the target app's screens, controls, and interactions. Record what belongs to the original design and what adapts it to a modern device.
 2. Decide which screens benefit from the shared frame and which should retain specialized original layouts. Define materials, typography, controls, and motion for each. Use independent navigation panels and status/bottom continuity on applicable screens; do not introduce those elements on screens that do not need them. Include both interface languages in the initial layout.
 3. Implement within the app's independent project. Reuse existing component patterns where their appearance and behavior fit. Extract shared code only for a concrete common requirement; this guide does not require a speculative package or a bulk refactor of Weather and Notes.
-4. Check portrait and landscape, a compact device and a modern notched device, both languages, the keyboard, empty/long content, disabled/error states, modal cancellation/reopening, and Reduce Motion where animations are affected.
+4. Check portrait and landscape, a compact device and a modern notched device, both languages, the keyboard, empty/long content, disabled/error states, modal cancellation/reopening, and Reduce Motion where animations are affected. Inspect top and bottom background continuity together on every affected screen, including screens with tab bars and specialized main-page layouts.
 5. Save representative screenshots and record meaningful build, visual, and affected-flow validation in the app's `docs/verification.md`. Use isolated test data and preserve the user's real data.
 6. Link this guide from the app README, note which patterns apply and which screens keep their own layout, and register the app in the collection workspace and root README as described in the [project layout guide](project-layout.md).
 

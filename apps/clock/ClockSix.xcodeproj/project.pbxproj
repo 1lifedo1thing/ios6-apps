@@ -1,0 +1,398 @@
+// !$*UTF8*$!
+{
+archiveVersion = "1";
+classes = {
+
+};
+objectVersion = "77";
+objects = {
+96736C640BF8D1B59AF5EADE = {
+isa = "PBXFileSystemSynchronizedRootGroup";
+path = "ClockSix";
+sourceTree = "<group>";
+exceptions = ("EC4374D329B81E8551CCBA7A");
+};
+EC4374D329B81E8551CCBA7A = {
+isa = "PBXFileSystemSynchronizedBuildFileExceptionSet";
+membershipExceptions = ("Info.plist");
+target = "5A3E89BFD218634D81B181EF";
+};
+5808790560A9E48D43B0B72D = {
+isa = "PBXFileReference";
+explicitFileType = "wrapper.application";
+path = "ClockSix.app";
+sourceTree = "BUILT_PRODUCTS_DIR";
+};
+7DC765554AABB617E936D57D = {
+isa = "PBXSourcesBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+78C140917257FF4820E05B91 = {
+isa = "PBXFrameworksBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+C8A598C42A56193A47ED4E10 = {
+isa = "PBXResourcesBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+343CDA6E1531B7C340F6B85E = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+SDKROOT = "iphoneos";
+SWIFT_VERSION = "5.0";
+CLANG_ENABLE_MODULES = "YES";
+CLANG_ENABLE_OBJC_ARC = "YES";
+ENABLE_USER_SCRIPT_SANDBOXING = "YES";
+CODE_SIGN_STYLE = "Automatic";
+TARGETED_DEVICE_FAMILY = "1";
+GENERATE_INFOPLIST_FILE = "YES";
+MARKETING_VERSION = "1.0";
+CURRENT_PROJECT_VERSION = "1";
+PRODUCT_NAME = "$(TARGET_NAME)";
+PRODUCT_BUNDLE_IDENTIFIER = "com.yinyueyang.clocksix";
+SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+DEBUG_INFORMATION_FORMAT = "dwarf";
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+ENABLE_TESTABILITY = "YES";
+ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon";
+INFOPLIST_FILE = "ClockSix/Info.plist";
+INFOPLIST_KEY_CFBundleDisplayName = "Clock";
+INFOPLIST_KEY_UILaunchScreen_Generation = "YES";
+INFOPLIST_KEY_UIStatusBarStyle = "UIStatusBarStyleDefault";
+INFOPLIST_KEY_UIUserInterfaceStyle = "Light";
+INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+};
+name = "Debug";
+};
+63BE5321AA836729B4B880EA = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+SDKROOT = "iphoneos";
+SWIFT_VERSION = "5.0";
+CLANG_ENABLE_MODULES = "YES";
+CLANG_ENABLE_OBJC_ARC = "YES";
+ENABLE_USER_SCRIPT_SANDBOXING = "YES";
+CODE_SIGN_STYLE = "Automatic";
+TARGETED_DEVICE_FAMILY = "1";
+GENERATE_INFOPLIST_FILE = "YES";
+MARKETING_VERSION = "1.0";
+CURRENT_PROJECT_VERSION = "1";
+PRODUCT_NAME = "$(TARGET_NAME)";
+PRODUCT_BUNDLE_IDENTIFIER = "com.yinyueyang.clocksix";
+SWIFT_OPTIMIZATION_LEVEL = "-O";
+DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon";
+INFOPLIST_FILE = "ClockSix/Info.plist";
+INFOPLIST_KEY_CFBundleDisplayName = "Clock";
+INFOPLIST_KEY_UILaunchScreen_Generation = "YES";
+INFOPLIST_KEY_UIStatusBarStyle = "UIStatusBarStyleDefault";
+INFOPLIST_KEY_UIUserInterfaceStyle = "Light";
+INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+};
+name = "Release";
+};
+74D4D2B607D6B085FC32A09A = {
+isa = "XCConfigurationList";
+buildConfigurations = ("343CDA6E1531B7C340F6B85E", "63BE5321AA836729B4B880EA");
+defaultConfigurationIsVisible = "0";
+defaultConfigurationName = "Release";
+};
+5A3E89BFD218634D81B181EF = {
+isa = "PBXNativeTarget";
+buildConfigurationList = "74D4D2B607D6B085FC32A09A";
+buildPhases = ("7DC765554AABB617E936D57D", "78C140917257FF4820E05B91", "C8A598C42A56193A47ED4E10");
+buildRules = ();
+dependencies = ();
+fileSystemSynchronizedGroups = ("96736C640BF8D1B59AF5EADE");
+name = "ClockSix";
+productName = "ClockSix";
+productReference = "5808790560A9E48D43B0B72D";
+productType = "com.apple.product-type.application";
+};
+C909931EBDB00ACD2B2AEA9A = {
+isa = "PBXFileSystemSynchronizedRootGroup";
+path = "ClockSixTests";
+sourceTree = "<group>";
+};
+13D9E2AF7C56198221BB6DF9 = {
+isa = "PBXFileReference";
+explicitFileType = "wrapper.cfbundle";
+path = "ClockSixTests.xctest";
+sourceTree = "BUILT_PRODUCTS_DIR";
+};
+B606F27BBE400FC1055231E7 = {
+isa = "PBXSourcesBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+1BD825F0312744D5095E1C17 = {
+isa = "PBXFrameworksBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+84E0931678B5B4409D43B8A9 = {
+isa = "PBXResourcesBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+A8FE0C0FA66CBF8BEE842688 = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+SDKROOT = "iphoneos";
+SWIFT_VERSION = "5.0";
+CLANG_ENABLE_MODULES = "YES";
+CLANG_ENABLE_OBJC_ARC = "YES";
+ENABLE_USER_SCRIPT_SANDBOXING = "YES";
+CODE_SIGN_STYLE = "Automatic";
+TARGETED_DEVICE_FAMILY = "1";
+GENERATE_INFOPLIST_FILE = "YES";
+MARKETING_VERSION = "1.0";
+CURRENT_PROJECT_VERSION = "1";
+PRODUCT_NAME = "$(TARGET_NAME)";
+PRODUCT_BUNDLE_IDENTIFIER = "com.yinyueyang.clocksixtests";
+SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+DEBUG_INFORMATION_FORMAT = "dwarf";
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+ENABLE_TESTABILITY = "YES";
+TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClockSix.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ClockSix";
+BUNDLE_LOADER = "$(TEST_HOST)";
+};
+name = "Debug";
+};
+A077A944F64FBDC4F57B9AF2 = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+SDKROOT = "iphoneos";
+SWIFT_VERSION = "5.0";
+CLANG_ENABLE_MODULES = "YES";
+CLANG_ENABLE_OBJC_ARC = "YES";
+ENABLE_USER_SCRIPT_SANDBOXING = "YES";
+CODE_SIGN_STYLE = "Automatic";
+TARGETED_DEVICE_FAMILY = "1";
+GENERATE_INFOPLIST_FILE = "YES";
+MARKETING_VERSION = "1.0";
+CURRENT_PROJECT_VERSION = "1";
+PRODUCT_NAME = "$(TARGET_NAME)";
+PRODUCT_BUNDLE_IDENTIFIER = "com.yinyueyang.clocksixtests";
+SWIFT_OPTIMIZATION_LEVEL = "-O";
+DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClockSix.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ClockSix";
+BUNDLE_LOADER = "$(TEST_HOST)";
+};
+name = "Release";
+};
+B254B7FD125CD09ED12CEF7E = {
+isa = "XCConfigurationList";
+buildConfigurations = ("A8FE0C0FA66CBF8BEE842688", "A077A944F64FBDC4F57B9AF2");
+defaultConfigurationIsVisible = "0";
+defaultConfigurationName = "Release";
+};
+3E787EFAED307C43D22A740E = {
+isa = "PBXContainerItemProxy";
+containerPortal = "98F54143AB4E86B28C3AFEE0";
+proxyType = "1";
+remoteGlobalIDString = "5A3E89BFD218634D81B181EF";
+remoteInfo = "ClockSix";
+};
+FDC60000C2F8FC9B9B891B2F = {
+isa = "PBXTargetDependency";
+target = "5A3E89BFD218634D81B181EF";
+targetProxy = "3E787EFAED307C43D22A740E";
+};
+07E4925B63A58D7659584538 = {
+isa = "PBXNativeTarget";
+buildConfigurationList = "B254B7FD125CD09ED12CEF7E";
+buildPhases = ("B606F27BBE400FC1055231E7", "1BD825F0312744D5095E1C17", "84E0931678B5B4409D43B8A9");
+buildRules = ();
+dependencies = ("FDC60000C2F8FC9B9B891B2F");
+fileSystemSynchronizedGroups = ("C909931EBDB00ACD2B2AEA9A");
+name = "ClockSixTests";
+productName = "ClockSixTests";
+productReference = "13D9E2AF7C56198221BB6DF9";
+productType = "com.apple.product-type.bundle.unit-test";
+};
+F1A54EE1281C0640B9281647 = {
+isa = "PBXFileSystemSynchronizedRootGroup";
+path = "ClockSixUITests";
+sourceTree = "<group>";
+};
+7BDD451E10367715E9FB9B8F = {
+isa = "PBXFileReference";
+explicitFileType = "wrapper.cfbundle";
+path = "ClockSixUITests.xctest";
+sourceTree = "BUILT_PRODUCTS_DIR";
+};
+41CF1ED1B2AF36B0268F93BF = {
+isa = "PBXSourcesBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+8171B0C054C7A49BF48E305D = {
+isa = "PBXFrameworksBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+3FAC98A80B469135EBDC4436 = {
+isa = "PBXResourcesBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+F13246CBC117EE7DA6B7CD88 = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+SDKROOT = "iphoneos";
+SWIFT_VERSION = "5.0";
+CLANG_ENABLE_MODULES = "YES";
+CLANG_ENABLE_OBJC_ARC = "YES";
+ENABLE_USER_SCRIPT_SANDBOXING = "YES";
+CODE_SIGN_STYLE = "Automatic";
+TARGETED_DEVICE_FAMILY = "1";
+GENERATE_INFOPLIST_FILE = "YES";
+MARKETING_VERSION = "1.0";
+CURRENT_PROJECT_VERSION = "1";
+PRODUCT_NAME = "$(TARGET_NAME)";
+PRODUCT_BUNDLE_IDENTIFIER = "com.yinyueyang.clocksixuitests";
+SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+DEBUG_INFORMATION_FORMAT = "dwarf";
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+ENABLE_TESTABILITY = "YES";
+TEST_TARGET_NAME = "ClockSix";
+};
+name = "Debug";
+};
+2F9F5F1D6280DE6077561820 = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+SDKROOT = "iphoneos";
+SWIFT_VERSION = "5.0";
+CLANG_ENABLE_MODULES = "YES";
+CLANG_ENABLE_OBJC_ARC = "YES";
+ENABLE_USER_SCRIPT_SANDBOXING = "YES";
+CODE_SIGN_STYLE = "Automatic";
+TARGETED_DEVICE_FAMILY = "1";
+GENERATE_INFOPLIST_FILE = "YES";
+MARKETING_VERSION = "1.0";
+CURRENT_PROJECT_VERSION = "1";
+PRODUCT_NAME = "$(TARGET_NAME)";
+PRODUCT_BUNDLE_IDENTIFIER = "com.yinyueyang.clocksixuitests";
+SWIFT_OPTIMIZATION_LEVEL = "-O";
+DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+TEST_TARGET_NAME = "ClockSix";
+};
+name = "Release";
+};
+04A9465EACD8A1506A1966EE = {
+isa = "XCConfigurationList";
+buildConfigurations = ("F13246CBC117EE7DA6B7CD88", "2F9F5F1D6280DE6077561820");
+defaultConfigurationIsVisible = "0";
+defaultConfigurationName = "Release";
+};
+BB16E4E63866F773F675A6F1 = {
+isa = "PBXContainerItemProxy";
+containerPortal = "98F54143AB4E86B28C3AFEE0";
+proxyType = "1";
+remoteGlobalIDString = "5A3E89BFD218634D81B181EF";
+remoteInfo = "ClockSix";
+};
+12C042CE9EF85263D3BCF537 = {
+isa = "PBXTargetDependency";
+target = "5A3E89BFD218634D81B181EF";
+targetProxy = "BB16E4E63866F773F675A6F1";
+};
+6B5C310A68E03549FE6E8733 = {
+isa = "PBXNativeTarget";
+buildConfigurationList = "04A9465EACD8A1506A1966EE";
+buildPhases = ("41CF1ED1B2AF36B0268F93BF", "8171B0C054C7A49BF48E305D", "3FAC98A80B469135EBDC4436");
+buildRules = ();
+dependencies = ("12C042CE9EF85263D3BCF537");
+fileSystemSynchronizedGroups = ("F1A54EE1281C0640B9281647");
+name = "ClockSixUITests";
+productName = "ClockSixUITests";
+productReference = "7BDD451E10367715E9FB9B8F";
+productType = "com.apple.product-type.bundle.ui-testing";
+};
+FBDC4F23F93125BBEEAE800C = {
+isa = "PBXGroup";
+children = ("5808790560A9E48D43B0B72D", "13D9E2AF7C56198221BB6DF9", "7BDD451E10367715E9FB9B8F");
+name = "Products";
+sourceTree = "<group>";
+};
+B28B7AF69320201D1CF206EB = {
+isa = "PBXGroup";
+children = ("96736C640BF8D1B59AF5EADE", "C909931EBDB00ACD2B2AEA9A", "F1A54EE1281C0640B9281647", "FBDC4F23F93125BBEEAE800C");
+sourceTree = "<group>";
+};
+ED8772ADEC3A6C25161BC957 = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+ALWAYS_SEARCH_USER_PATHS = "NO";
+CLANG_WARN_DOCUMENTATION_COMMENTS = "YES";
+GCC_WARN_UNUSED_VARIABLE = "YES";
+};
+name = "Debug";
+};
+00F209874A1F7309F6DCEAA7 = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+ALWAYS_SEARCH_USER_PATHS = "NO";
+CLANG_WARN_DOCUMENTATION_COMMENTS = "YES";
+GCC_WARN_UNUSED_VARIABLE = "YES";
+};
+name = "Release";
+};
+640DC9EFD529235A8D9E2727 = {
+isa = "XCConfigurationList";
+buildConfigurations = ("ED8772ADEC3A6C25161BC957", "00F209874A1F7309F6DCEAA7");
+defaultConfigurationIsVisible = "0";
+defaultConfigurationName = "Release";
+};
+98F54143AB4E86B28C3AFEE0 = {
+isa = "PBXProject";
+attributes = {
+BuildIndependentTargetsInParallel = "YES";
+LastUpgradeCheck = "2700";
+TargetAttributes = {
+5A3E89BFD218634D81B181EF = {
+CreatedOnToolsVersion = "27.0";
+};
+07E4925B63A58D7659584538 = {
+CreatedOnToolsVersion = "27.0";
+};
+6B5C310A68E03549FE6E8733 = {
+CreatedOnToolsVersion = "27.0";
+};
+};
+};
+buildConfigurationList = "640DC9EFD529235A8D9E2727";
+compatibilityVersion = "Xcode 16.0";
+developmentRegion = "en";
+hasScannedForEncodings = "0";
+knownRegions = ("en", "zh-Hans", "Base");
+mainGroup = "B28B7AF69320201D1CF206EB";
+productRefGroup = "FBDC4F23F93125BBEEAE800C";
+projectDirPath = "";
+projectRoot = "";
+targets = ("5A3E89BFD218634D81B181EF", "07E4925B63A58D7659584538", "6B5C310A68E03549FE6E8733");
+preferredProjectObjectVersion = "77";
+};
+};
+rootObject = "98F54143AB4E86B28C3AFEE0";
+}
