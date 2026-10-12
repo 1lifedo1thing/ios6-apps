@@ -1,0 +1,2 @@
+"CFBundleDisplayName" = "日历";
+"NSCalendarsFullAccessUsageDescription" = "当你选择连接系统日历时，日历将读取和编辑系统日历中的事件。";

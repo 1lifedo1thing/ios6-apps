@@ -1,0 +1,405 @@
+[
+  {
+    "day": 1,
+    "old_center_error": -35.5,
+    "ink_bounds": [
+      427,
+      384,
+      598,
+      844
+    ],
+    "left_margin": 427,
+    "right_margin": 426,
+    "center_error": 0.5
+  },
+  {
+    "day": 2,
+    "old_center_error": -4.0,
+    "ink_bounds": [
+      353,
+      382,
+      672,
+      844
+    ],
+    "left_margin": 353,
+    "right_margin": 352,
+    "center_error": 0.5
+  },
+  {
+    "day": 3,
+    "old_center_error": -7.0,
+    "ink_bounds": [
+      351,
+      382,
+      673,
+      857
+    ],
+    "left_margin": 351,
+    "right_margin": 351,
+    "center_error": 0.0
+  },
+  {
+    "day": 4,
+    "old_center_error": -3.0,
+    "ink_bounds": [
+      348,
+      381,
+      676,
+      844
+    ],
+    "left_margin": 348,
+    "right_margin": 348,
+    "center_error": 0.0
+  },
+  {
+    "day": 5,
+    "old_center_error": -3.5,
+    "ink_bounds": [
+      353,
+      390,
+      671,
+      856
+    ],
+    "left_margin": 353,
+    "right_margin": 353,
+    "center_error": 0.0
+  },
+  {
+    "day": 6,
+    "old_center_error": -1.0,
+    "ink_bounds": [
+      354,
+      381,
+      670,
+      857
+    ],
+    "left_margin": 354,
+    "right_margin": 354,
+    "center_error": 0.0
+  },
+  {
+    "day": 7,
+    "old_center_error": 1.0,
+    "ink_bounds": [
+      351,
+      390,
+      672,
+      844
+    ],
+    "left_margin": 351,
+    "right_margin": 352,
+    "center_error": -0.5
+  },
+  {
+    "day": 8,
+    "old_center_error": -4.0,
+    "ink_bounds": [
+      353,
+      382,
+      670,
+      857
+    ],
+    "left_margin": 353,
+    "right_margin": 354,
+    "center_error": -0.5
+  },
+  {
+    "day": 9,
+    "old_center_error": -4.5,
+    "ink_bounds": [
+      356,
+      382,
+      667,
+      857
+    ],
+    "left_margin": 356,
+    "right_margin": 357,
+    "center_error": -0.5
+  },
+  {
+    "day": 10,
+    "old_center_error": 18.0,
+    "ink_bounds": [
+      190,
+      382,
+      833,
+      857
+    ],
+    "left_margin": 190,
+    "right_margin": 191,
+    "center_error": -0.5
+  },
+  {
+    "day": 11,
+    "old_center_error": -35.5,
+    "ink_bounds": [
+      268,
+      384,
+      757,
+      844
+    ],
+    "left_margin": 268,
+    "right_margin": 267,
+    "center_error": 0.5
+  },
+  {
+    "day": 12,
+    "old_center_error": 18.0,
+    "ink_bounds": [
+      190,
+      382,
+      834,
+      844
+    ],
+    "left_margin": 190,
+    "right_margin": 190,
+    "center_error": 0.0
+  },
+  {
+    "day": 13,
+    "old_center_error": 17.5,
+    "ink_bounds": [
+      190,
+      382,
+      832,
+      857
+    ],
+    "left_margin": 190,
+    "right_margin": 192,
+    "center_error": -1.0
+  },
+  {
+    "day": 14,
+    "old_center_error": 21.0,
+    "ink_bounds": [
+      187,
+      381,
+      836,
+      844
+    ],
+    "left_margin": 187,
+    "right_margin": 188,
+    "center_error": -0.5
+  },
+  {
+    "day": 15,
+    "old_center_error": 18.0,
+    "ink_bounds": [
+      190,
+      384,
+      833,
+      856
+    ],
+    "left_margin": 190,
+    "right_margin": 191,
+    "center_error": -0.5
+  },
+  {
+    "day": 16,
+    "old_center_error": 19.0,
+    "ink_bounds": [
+      189,
+      381,
+      834,
+      857
+    ],
+    "left_margin": 189,
+    "right_margin": 190,
+    "center_error": -0.5
+  },
+  {
+    "day": 17,
+    "old_center_error": 21.0,
+    "ink_bounds": [
+      187,
+      384,
+      836,
+      844
+    ],
+    "left_margin": 187,
+    "right_margin": 188,
+    "center_error": -0.5
+  },
+  {
+    "day": 18,
+    "old_center_error": 17.5,
+    "ink_bounds": [
+      190,
+      382,
+      832,
+      857
+    ],
+    "left_margin": 190,
+    "right_margin": 192,
+    "center_error": -1.0
+  },
+  {
+    "day": 19,
+    "old_center_error": 16.0,
+    "ink_bounds": [
+      192,
+      382,
+      831,
+      857
+    ],
+    "left_margin": 192,
+    "right_margin": 193,
+    "center_error": -0.5
+  },
+  {
+    "day": 20,
+    "old_center_error": -3.5,
+    "ink_bounds": [
+      170,
+      382,
+      855,
+      857
+    ],
+    "left_margin": 170,
+    "right_margin": 169,
+    "center_error": 0.5
+  },
+  {
+    "day": 21,
+    "old_center_error": -56.5,
+    "ink_bounds": [
+      222,
+      382,
+      802,
+      844
+    ],
+    "left_margin": 222,
+    "right_margin": 222,
+    "center_error": 0.0
+  },
+  {
+    "day": 22,
+    "old_center_error": -3.5,
+    "ink_bounds": [
+      170,
+      382,
+      856,
+      844
+    ],
+    "left_margin": 170,
+    "right_margin": 168,
+    "center_error": 1.0
+  },
+  {
+    "day": 23,
+    "old_center_error": -4.0,
+    "ink_bounds": [
+      170,
+      382,
+      854,
+      857
+    ],
+    "left_margin": 170,
+    "right_margin": 170,
+    "center_error": 0.0
+  },
+  {
+    "day": 24,
+    "old_center_error": -0.5,
+    "ink_bounds": [
+      166,
+      381,
+      857,
+      844
+    ],
+    "left_margin": 166,
+    "right_margin": 167,
+    "center_error": -0.5
+  },
+  {
+    "day": 25,
+    "old_center_error": -3.5,
+    "ink_bounds": [
+      170,
+      382,
+      855,
+      856
+    ],
+    "left_margin": 170,
+    "right_margin": 169,
+    "center_error": 0.5
+  },
+  {
+    "day": 26,
+    "old_center_error": -2.5,
+    "ink_bounds": [
+      168,
+      381,
+      855,
+      857
+    ],
+    "left_margin": 168,
+    "right_margin": 169,
+    "center_error": -0.5
+  },
+  {
+    "day": 27,
+    "old_center_error": -0.5,
+    "ink_bounds": [
+      166,
+      382,
+      857,
+      844
+    ],
+    "left_margin": 166,
+    "right_margin": 167,
+    "center_error": -0.5
+  },
+  {
+    "day": 28,
+    "old_center_error": -4.0,
+    "ink_bounds": [
+      170,
+      382,
+      854,
+      857
+    ],
+    "left_margin": 170,
+    "right_margin": 170,
+    "center_error": 0.0
+  },
+  {
+    "day": 29,
+    "old_center_error": -5.5,
+    "ink_bounds": [
+      172,
+      382,
+      853,
+      857
+    ],
+    "left_margin": 172,
+    "right_margin": 171,
+    "center_error": 0.5
+  },
+  {
+    "day": 30,
+    "old_center_error": -6.0,
+    "ink_bounds": [
+      167,
+      382,
+      857,
+      857
+    ],
+    "left_margin": 167,
+    "right_margin": 167,
+    "center_error": 0.0
+  },
+  {
+    "day": 31,
+    "old_center_error": -59.0,
+    "ink_bounds": [
+      220,
+      382,
+      805,
+      857
+    ],
+    "left_margin": 220,
+    "right_margin": 219,
+    "center_error": 0.5
+  }
+]

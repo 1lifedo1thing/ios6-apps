@@ -1,0 +1,2 @@
+"CFBundleDisplayName" = "Calendar";
+"NSCalendarsFullAccessUsageDescription" = "Calendar reads and edits your system calendar events when you choose to connect system calendars.";

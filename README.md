@@ -4,7 +4,7 @@ A collection of native app recreations inspired by the skeuomorphic design of iO
 
 ## Getting started
 
-Open `iOS6Apps.xcworkspace` at the collection root and select the app's scheme. Weather uses `WeatherSix`; Notes uses `NotesSix`; Calculator uses `CalculatorSix`; Compass uses `CompassSix`; Clock uses `ClockSix`. All require iOS 17 or later.
+Open `iOS6Apps.xcworkspace` at the collection root and select the app's scheme. Weather uses `WeatherSix`; Notes uses `NotesSix`; Calculator uses `CalculatorSix`; Compass uses `CompassSix`; Clock uses `ClockSix`; Calendar uses `CalendarSix`. All require iOS 17 or later.
 
 | App | Project | Documentation |
 | --- | --- | --- |
@@ -13,6 +13,7 @@ Open `iOS6Apps.xcworkspace` at the collection root and select the app's scheme. 
 | Compass | `apps/compass/CompassSix.xcodeproj` | [Run instructions](apps/compass/README.md), [Verification record](apps/compass/docs/verification.md) |
 | Calculator | `apps/calculator/CalculatorSix.xcodeproj` | [Run instructions](apps/calculator/README.md), [Verification record](apps/calculator/docs/verification.md) |
 | Clock | `apps/clock/ClockSix.xcodeproj` | [Run instructions](apps/clock/README.md), [Verification record](apps/clock/docs/verification.md) |
+| Calendar | `apps/calendar/CalendarSix.xcodeproj` | [Run instructions](apps/calendar/README.md), [Verification record](apps/calendar/docs/verification.md) |
 
 Weather defaults to Celsius, and its app icon displays `23°`. Use Current Location requests foreground location access and loads live weather. If access was denied, Open Settings provides a recovery path. Set a simulated location using Simulator → Features → Location when running on Simulator.
 
@@ -23,6 +24,8 @@ Notes recreates the brown leather navigation, yellow ruled paper, original font 
 Calculator recreates the olive LCD, glossy memory and number keys, tall orange equals, and rotation-driven scientific keypad. It includes real arithmetic/scientific operations, memory, swipe-to-delete, clipboard actions, and saved calculation state, using the same English/Simplified Chinese language rules as Weather.
 
 Compass recreates the iOS 6 walnut cabinet, brass rim, ivory compass rose, bearing, coordinates, Maps shortcut, and magnetic/true-north settings. Physical devices use Core Location heading and location updates. Simulator previews are explicitly labeled sample data. It uses the same English/Simplified Chinese language rules as Weather.
+
+Calendar recreates the blue-gray glossy chrome, embossed month grid, selected-day agenda, searchable event list, day timeline, and rotation-driven week view of the iPhone calendar. It includes persistent local calendars, event editing, recurrence and exception scopes, all-day events, reminders, and optional EventKit access to configured system accounts. It follows Weather's system/per-app English and Simplified Chinese language rules. Launch with `--demo` for isolated sample events; normal launches start with empty local calendars.
 
 ## Shared design language
 
@@ -38,6 +41,14 @@ ios6-apps/
 ├── README.md
 ├── iOS6Apps.xcworkspace/
 ├── apps/
+│   ├── calendar/
+│   │   ├── CalendarSix.xcodeproj/
+│   │   ├── CalendarSix/
+│   │   ├── CalendarSixTests/
+│   │   ├── CalendarSixUITests/
+│   │   ├── scripts/
+│   │   ├── docs/
+│   │   └── README.md
 │   ├── compass/
 │   │   ├── CompassSix.xcodeproj/
 │   │   ├── CompassSix/

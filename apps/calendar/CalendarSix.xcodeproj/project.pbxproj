@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+archiveVersion = "1";
+classes = {
+
+};
+objectVersion = "77";
+objects = {
+8A5062E94C7BF0514CEE9CFC = {
+isa = "PBXFileSystemSynchronizedRootGroup";
+path = "CalendarSix";
+sourceTree = "<group>";
+exceptions = ("0E6F631656328040682627C2");
+};
+0E6F631656328040682627C2 = {
+isa = "PBXFileSystemSynchronizedBuildFileExceptionSet";
+membershipExceptions = ("Info.plist");
+target = "F03279E7711DF9FDC9F79119";
+};
+B9FDF42773FA2FBC4E287BC1 = {
+isa = "PBXFileReference";
+explicitFileType = "wrapper.application";
+path = "CalendarSix.app";
+sourceTree = "BUILT_PRODUCTS_DIR";
+};
+0519798AD9EC59E9BEC29608 = {
+isa = "PBXSourcesBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+FB73030C4DD994BB377F051A = {
+isa = "PBXFrameworksBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+AE44F0B3D2562ED7D054B17F = {
+isa = "PBXResourcesBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+B6440D4611352338DA510B10 = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+SDKROOT = "iphoneos";
+SWIFT_VERSION = "5.0";
+CLANG_ENABLE_MODULES = "YES";
+CLANG_ENABLE_OBJC_ARC = "YES";
+ENABLE_USER_SCRIPT_SANDBOXING = "YES";
+CODE_SIGN_STYLE = "Automatic";
+TARGETED_DEVICE_FAMILY = "1";
+GENERATE_INFOPLIST_FILE = "YES";
+MARKETING_VERSION = "1.0";
+CURRENT_PROJECT_VERSION = "1";
+PRODUCT_NAME = "$(TARGET_NAME)";
+PRODUCT_BUNDLE_IDENTIFIER = "com.yinyueyang.calendarsix";
+SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+DEBUG_INFORMATION_FORMAT = "dwarf";
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+ENABLE_TESTABILITY = "YES";
+DEVELOPMENT_TEAM = "7768G8T96V";
+ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon";
+ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = ("CalendarDate_en_w1_d1", "CalendarDate_en_w1_d2", "CalendarDate_en_w1_d3", "CalendarDate_en_w1_d4", "CalendarDate_en_w1_d5", "CalendarDate_en_w1_d6", "CalendarDate_en_w1_d7", "CalendarDate_en_w1_d8", "CalendarDate_en_w1_d9", "CalendarDate_en_w1_d10", "CalendarDate_en_w1_d11", "CalendarDate_en_w1_d12", "CalendarDate_en_w1_d13", "CalendarDate_en_w1_d14", "CalendarDate_en_w1_d15", "CalendarDate_en_w1_d16", "CalendarDate_en_w1_d17", "CalendarDate_en_w1_d18", "CalendarDate_en_w1_d19", "CalendarDate_en_w1_d20", "CalendarDate_en_w1_d21", "CalendarDate_en_w1_d22", "CalendarDate_en_w1_d23", "CalendarDate_en_w1_d24", "CalendarDate_en_w1_d25", "CalendarDate_en_w1_d26", "CalendarDate_en_w1_d27", "CalendarDate_en_w1_d28", "CalendarDate_en_w1_d29", "CalendarDate_en_w1_d30", "CalendarDate_en_w1_d31", "CalendarDate_en_w2_d1", "CalendarDate_en_w2_d2", "CalendarDate_en_w2_d3", "CalendarDate_en_w2_d4", "CalendarDate_en_w2_d5", "CalendarDate_en_w2_d6", "CalendarDate_en_w2_d7", "CalendarDate_en_w2_d8", "CalendarDate_en_w2_d9", "CalendarDate_en_w2_d10", "CalendarDate_en_w2_d11", "CalendarDate_en_w2_d12", "CalendarDate_en_w2_d13", "CalendarDate_en_w2_d14", "CalendarDate_en_w2_d15", "CalendarDate_en_w2_d16", "CalendarDate_en_w2_d17", "CalendarDate_en_w2_d18", "CalendarDate_en_w2_d19", "CalendarDate_en_w2_d20", "CalendarDate_en_w2_d21", "CalendarDate_en_w2_d22", "CalendarDate_en_w2_d23", "CalendarDate_en_w2_d24", "CalendarDate_en_w2_d25", "CalendarDate_en_w2_d26", "CalendarDate_en_w2_d27", "CalendarDate_en_w2_d28", "CalendarDate_en_w2_d29", "CalendarDate_en_w2_d30", "CalendarDate_en_w2_d31", "CalendarDate_en_w3_d1", "CalendarDate_en_w3_d2", "CalendarDate_en_w3_d3", "CalendarDate_en_w3_d4", "CalendarDate_en_w3_d5", "CalendarDate_en_w3_d6", "CalendarDate_en_w3_d7", "CalendarDate_en_w3_d8", "CalendarDate_en_w3_d9", "CalendarDate_en_w3_d10", "CalendarDate_en_w3_d11", "CalendarDate_en_w3_d12", "CalendarDate_en_w3_d13", "CalendarDate_en_w3_d14", "CalendarDate_en_w3_d15", "CalendarDate_en_w3_d16", "CalendarDate_en_w3_d17", "CalendarDate_en_w3_d18", "CalendarDate_en_w3_d19", "CalendarDate_en_w3_d20", "CalendarDate_en_w3_d21", "CalendarDate_en_w3_d22", "CalendarDate_en_w3_d23", "CalendarDate_en_w3_d24", "CalendarDate_en_w3_d25", "CalendarDate_en_w3_d26", "CalendarDate_en_w3_d27", "CalendarDate_en_w3_d28", "CalendarDate_en_w3_d29", "CalendarDate_en_w3_d30", "CalendarDate_en_w3_d31", "CalendarDate_en_w4_d1", "CalendarDate_en_w4_d2", "CalendarDate_en_w4_d3", "CalendarDate_en_w4_d4", "CalendarDate_en_w4_d5", "CalendarDate_en_w4_d6", "CalendarDate_en_w4_d7", "CalendarDate_en_w4_d8", "CalendarDate_en_w4_d9", "CalendarDate_en_w4_d10", "CalendarDate_en_w4_d11", "CalendarDate_en_w4_d12", "CalendarDate_en_w4_d13", "CalendarDate_en_w4_d14", "CalendarDate_en_w4_d15", "CalendarDate_en_w4_d16", "CalendarDate_en_w4_d17", "CalendarDate_en_w4_d18", "CalendarDate_en_w4_d19", "CalendarDate_en_w4_d20", "CalendarDate_en_w4_d21", "CalendarDate_en_w4_d22", "CalendarDate_en_w4_d23", "CalendarDate_en_w4_d24", "CalendarDate_en_w4_d25", "CalendarDate_en_w4_d26", "CalendarDate_en_w4_d27", "CalendarDate_en_w4_d28", "CalendarDate_en_w4_d29", "CalendarDate_en_w4_d30", "CalendarDate_en_w4_d31", "CalendarDate_en_w5_d1", "CalendarDate_en_w5_d2", "CalendarDate_en_w5_d3", "CalendarDate_en_w5_d4", "CalendarDate_en_w5_d5", "CalendarDate_en_w5_d6", "CalendarDate_en_w5_d7", "CalendarDate_en_w5_d8", "CalendarDate_en_w5_d9", "CalendarDate_en_w5_d10", "CalendarDate_en_w5_d11", "CalendarDate_en_w5_d12", "CalendarDate_en_w5_d13", "CalendarDate_en_w5_d14", "CalendarDate_en_w5_d15", "CalendarDate_en_w5_d16", "CalendarDate_en_w5_d17", "CalendarDate_en_w5_d18", "CalendarDate_en_w5_d19", "CalendarDate_en_w5_d20", "CalendarDate_en_w5_d21", "CalendarDate_en_w5_d22", "CalendarDate_en_w5_d23", "CalendarDate_en_w5_d24", "CalendarDate_en_w5_d25", "CalendarDate_en_w5_d26", "CalendarDate_en_w5_d27", "CalendarDate_en_w5_d28", "CalendarDate_en_w5_d29", "CalendarDate_en_w5_d30", "CalendarDate_en_w5_d31", "CalendarDate_en_w6_d1", "CalendarDate_en_w6_d2", "CalendarDate_en_w6_d3", "CalendarDate_en_w6_d4", "CalendarDate_en_w6_d5", "CalendarDate_en_w6_d6", "CalendarDate_en_w6_d7", "CalendarDate_en_w6_d8", "CalendarDate_en_w6_d9", "CalendarDate_en_w6_d10", "CalendarDate_en_w6_d11", "CalendarDate_en_w6_d12", "CalendarDate_en_w6_d13", "CalendarDate_en_w6_d14", "CalendarDate_en_w6_d15", "CalendarDate_en_w6_d16", "CalendarDate_en_w6_d17", "CalendarDate_en_w6_d18", "CalendarDate_en_w6_d19", "CalendarDate_en_w6_d20", "CalendarDate_en_w6_d21", "CalendarDate_en_w6_d22", "CalendarDate_en_w6_d23", "CalendarDate_en_w6_d24", "CalendarDate_en_w6_d25", "CalendarDate_en_w6_d26", "CalendarDate_en_w6_d27", "CalendarDate_en_w6_d28", "CalendarDate_en_w6_d29", "CalendarDate_en_w6_d30", "CalendarDate_en_w6_d31", "CalendarDate_en_w7_d1", "CalendarDate_en_w7_d2", "CalendarDate_en_w7_d3", "CalendarDate_en_w7_d4", "CalendarDate_en_w7_d5", "CalendarDate_en_w7_d6", "CalendarDate_en_w7_d7", "CalendarDate_en_w7_d8", "CalendarDate_en_w7_d9", "CalendarDate_en_w7_d10", "CalendarDate_en_w7_d11", "CalendarDate_en_w7_d12", "CalendarDate_en_w7_d13", "CalendarDate_en_w7_d14", "CalendarDate_en_w7_d15", "CalendarDate_en_w7_d16", "CalendarDate_en_w7_d17", "CalendarDate_en_w7_d18", "CalendarDate_en_w7_d19", "CalendarDate_en_w7_d20", "CalendarDate_en_w7_d21", "CalendarDate_en_w7_d22", "CalendarDate_en_w7_d23", "CalendarDate_en_w7_d24", "CalendarDate_en_w7_d25", "CalendarDate_en_w7_d26", "CalendarDate_en_w7_d27", "CalendarDate_en_w7_d28", "CalendarDate_en_w7_d29", "CalendarDate_en_w7_d30", "CalendarDate_en_w7_d31", "CalendarDate_zh-Hans_w1_d1", "CalendarDate_zh-Hans_w1_d2", "CalendarDate_zh-Hans_w1_d3", "CalendarDate_zh-Hans_w1_d4", "CalendarDate_zh-Hans_w1_d5", "CalendarDate_zh-Hans_w1_d6", "CalendarDate_zh-Hans_w1_d7", "CalendarDate_zh-Hans_w1_d8", "CalendarDate_zh-Hans_w1_d9", "CalendarDate_zh-Hans_w1_d10", "CalendarDate_zh-Hans_w1_d11", "CalendarDate_zh-Hans_w1_d12", "CalendarDate_zh-Hans_w1_d13", "CalendarDate_zh-Hans_w1_d14", "CalendarDate_zh-Hans_w1_d15", "CalendarDate_zh-Hans_w1_d16", "CalendarDate_zh-Hans_w1_d17", "CalendarDate_zh-Hans_w1_d18", "CalendarDate_zh-Hans_w1_d19", "CalendarDate_zh-Hans_w1_d20", "CalendarDate_zh-Hans_w1_d21", "CalendarDate_zh-Hans_w1_d22", "CalendarDate_zh-Hans_w1_d23", "CalendarDate_zh-Hans_w1_d24", "CalendarDate_zh-Hans_w1_d25", "CalendarDate_zh-Hans_w1_d26", "CalendarDate_zh-Hans_w1_d27", "CalendarDate_zh-Hans_w1_d28", "CalendarDate_zh-Hans_w1_d29", "CalendarDate_zh-Hans_w1_d30", "CalendarDate_zh-Hans_w1_d31", "CalendarDate_zh-Hans_w2_d1", "CalendarDate_zh-Hans_w2_d2", "CalendarDate_zh-Hans_w2_d3", "CalendarDate_zh-Hans_w2_d4", "CalendarDate_zh-Hans_w2_d5", "CalendarDate_zh-Hans_w2_d6", "CalendarDate_zh-Hans_w2_d7", "CalendarDate_zh-Hans_w2_d8", "CalendarDate_zh-Hans_w2_d9", "CalendarDate_zh-Hans_w2_d10", "CalendarDate_zh-Hans_w2_d11", "CalendarDate_zh-Hans_w2_d12", "CalendarDate_zh-Hans_w2_d13", "CalendarDate_zh-Hans_w2_d14", "CalendarDate_zh-Hans_w2_d15", "CalendarDate_zh-Hans_w2_d16", "CalendarDate_zh-Hans_w2_d17", "CalendarDate_zh-Hans_w2_d18", "CalendarDate_zh-Hans_w2_d19", "CalendarDate_zh-Hans_w2_d20", "CalendarDate_zh-Hans_w2_d21", "CalendarDate_zh-Hans_w2_d22", "CalendarDate_zh-Hans_w2_d23", "CalendarDate_zh-Hans_w2_d24", "CalendarDate_zh-Hans_w2_d25", "CalendarDate_zh-Hans_w2_d26", "CalendarDate_zh-Hans_w2_d27", "CalendarDate_zh-Hans_w2_d28", "CalendarDate_zh-Hans_w2_d29", "CalendarDate_zh-Hans_w2_d30", "CalendarDate_zh-Hans_w2_d31", "CalendarDate_zh-Hans_w3_d1", "CalendarDate_zh-Hans_w3_d2", "CalendarDate_zh-Hans_w3_d3", "CalendarDate_zh-Hans_w3_d4", "CalendarDate_zh-Hans_w3_d5", "CalendarDate_zh-Hans_w3_d6", "CalendarDate_zh-Hans_w3_d7", "CalendarDate_zh-Hans_w3_d8", "CalendarDate_zh-Hans_w3_d9", "CalendarDate_zh-Hans_w3_d10", "CalendarDate_zh-Hans_w3_d11", "CalendarDate_zh-Hans_w3_d12", "CalendarDate_zh-Hans_w3_d13", "CalendarDate_zh-Hans_w3_d14", "CalendarDate_zh-Hans_w3_d15", "CalendarDate_zh-Hans_w3_d16", "CalendarDate_zh-Hans_w3_d17", "CalendarDate_zh-Hans_w3_d18", "CalendarDate_zh-Hans_w3_d19", "CalendarDate_zh-Hans_w3_d20", "CalendarDate_zh-Hans_w3_d21", "CalendarDate_zh-Hans_w3_d22", "CalendarDate_zh-Hans_w3_d23", "CalendarDate_zh-Hans_w3_d24", "CalendarDate_zh-Hans_w3_d25", "CalendarDate_zh-Hans_w3_d26", "CalendarDate_zh-Hans_w3_d27", "CalendarDate_zh-Hans_w3_d28", "CalendarDate_zh-Hans_w3_d29", "CalendarDate_zh-Hans_w3_d30", "CalendarDate_zh-Hans_w3_d31", "CalendarDate_zh-Hans_w4_d1", "CalendarDate_zh-Hans_w4_d2", "CalendarDate_zh-Hans_w4_d3", "CalendarDate_zh-Hans_w4_d4", "CalendarDate_zh-Hans_w4_d5", "CalendarDate_zh-Hans_w4_d6", "CalendarDate_zh-Hans_w4_d7", "CalendarDate_zh-Hans_w4_d8", "CalendarDate_zh-Hans_w4_d9", "CalendarDate_zh-Hans_w4_d10", "CalendarDate_zh-Hans_w4_d11", "CalendarDate_zh-Hans_w4_d12", "CalendarDate_zh-Hans_w4_d13", "CalendarDate_zh-Hans_w4_d14", "CalendarDate_zh-Hans_w4_d15", "CalendarDate_zh-Hans_w4_d16", "CalendarDate_zh-Hans_w4_d17", "CalendarDate_zh-Hans_w4_d18", "CalendarDate_zh-Hans_w4_d19", "CalendarDate_zh-Hans_w4_d20", "CalendarDate_zh-Hans_w4_d21", "CalendarDate_zh-Hans_w4_d22", "CalendarDate_zh-Hans_w4_d23", "CalendarDate_zh-Hans_w4_d24", "CalendarDate_zh-Hans_w4_d25", "CalendarDate_zh-Hans_w4_d26", "CalendarDate_zh-Hans_w4_d27", "CalendarDate_zh-Hans_w4_d28", "CalendarDate_zh-Hans_w4_d29", "CalendarDate_zh-Hans_w4_d30", "CalendarDate_zh-Hans_w4_d31", "CalendarDate_zh-Hans_w5_d1", "CalendarDate_zh-Hans_w5_d2", "CalendarDate_zh-Hans_w5_d3", "CalendarDate_zh-Hans_w5_d4", "CalendarDate_zh-Hans_w5_d5", "CalendarDate_zh-Hans_w5_d6", "CalendarDate_zh-Hans_w5_d7", "CalendarDate_zh-Hans_w5_d8", "CalendarDate_zh-Hans_w5_d9", "CalendarDate_zh-Hans_w5_d10", "CalendarDate_zh-Hans_w5_d11", "CalendarDate_zh-Hans_w5_d12", "CalendarDate_zh-Hans_w5_d13", "CalendarDate_zh-Hans_w5_d14", "CalendarDate_zh-Hans_w5_d15", "CalendarDate_zh-Hans_w5_d16", "CalendarDate_zh-Hans_w5_d17", "CalendarDate_zh-Hans_w5_d18", "CalendarDate_zh-Hans_w5_d19", "CalendarDate_zh-Hans_w5_d20", "CalendarDate_zh-Hans_w5_d21", "CalendarDate_zh-Hans_w5_d22", "CalendarDate_zh-Hans_w5_d23", "CalendarDate_zh-Hans_w5_d24", "CalendarDate_zh-Hans_w5_d25", "CalendarDate_zh-Hans_w5_d26", "CalendarDate_zh-Hans_w5_d27", "CalendarDate_zh-Hans_w5_d28", "CalendarDate_zh-Hans_w5_d29", "CalendarDate_zh-Hans_w5_d30", "CalendarDate_zh-Hans_w5_d31", "CalendarDate_zh-Hans_w6_d1", "CalendarDate_zh-Hans_w6_d2", "CalendarDate_zh-Hans_w6_d3", "CalendarDate_zh-Hans_w6_d4", "CalendarDate_zh-Hans_w6_d5", "CalendarDate_zh-Hans_w6_d6", "CalendarDate_zh-Hans_w6_d7", "CalendarDate_zh-Hans_w6_d8", "CalendarDate_zh-Hans_w6_d9", "CalendarDate_zh-Hans_w6_d10", "CalendarDate_zh-Hans_w6_d11", "CalendarDate_zh-Hans_w6_d12", "CalendarDate_zh-Hans_w6_d13", "CalendarDate_zh-Hans_w6_d14", "CalendarDate_zh-Hans_w6_d15", "CalendarDate_zh-Hans_w6_d16", "CalendarDate_zh-Hans_w6_d17", "CalendarDate_zh-Hans_w6_d18", "CalendarDate_zh-Hans_w6_d19", "CalendarDate_zh-Hans_w6_d20", "CalendarDate_zh-Hans_w6_d21", "CalendarDate_zh-Hans_w6_d22", "CalendarDate_zh-Hans_w6_d23", "CalendarDate_zh-Hans_w6_d24", "CalendarDate_zh-Hans_w6_d25", "CalendarDate_zh-Hans_w6_d26", "CalendarDate_zh-Hans_w6_d27", "CalendarDate_zh-Hans_w6_d28", "CalendarDate_zh-Hans_w6_d29", "CalendarDate_zh-Hans_w6_d30", "CalendarDate_zh-Hans_w6_d31", "CalendarDate_zh-Hans_w7_d1", "CalendarDate_zh-Hans_w7_d2", "CalendarDate_zh-Hans_w7_d3", "CalendarDate_zh-Hans_w7_d4", "CalendarDate_zh-Hans_w7_d5", "CalendarDate_zh-Hans_w7_d6", "CalendarDate_zh-Hans_w7_d7", "CalendarDate_zh-Hans_w7_d8", "CalendarDate_zh-Hans_w7_d9", "CalendarDate_zh-Hans_w7_d10", "CalendarDate_zh-Hans_w7_d11", "CalendarDate_zh-Hans_w7_d12", "CalendarDate_zh-Hans_w7_d13", "CalendarDate_zh-Hans_w7_d14", "CalendarDate_zh-Hans_w7_d15", "CalendarDate_zh-Hans_w7_d16", "CalendarDate_zh-Hans_w7_d17", "CalendarDate_zh-Hans_w7_d18", "CalendarDate_zh-Hans_w7_d19", "CalendarDate_zh-Hans_w7_d20", "CalendarDate_zh-Hans_w7_d21", "CalendarDate_zh-Hans_w7_d22", "CalendarDate_zh-Hans_w7_d23", "CalendarDate_zh-Hans_w7_d24", "CalendarDate_zh-Hans_w7_d25", "CalendarDate_zh-Hans_w7_d26", "CalendarDate_zh-Hans_w7_d27", "CalendarDate_zh-Hans_w7_d28", "CalendarDate_zh-Hans_w7_d29", "CalendarDate_zh-Hans_w7_d30", "CalendarDate_zh-Hans_w7_d31");
+INFOPLIST_FILE = "CalendarSix/Info.plist";
+INFOPLIST_KEY_CFBundleDisplayName = "Calendar";
+INFOPLIST_KEY_UILaunchScreen_Generation = "YES";
+INFOPLIST_KEY_UIStatusBarStyle = "UIStatusBarStyleDefault";
+INFOPLIST_KEY_UIUserInterfaceStyle = "Light";
+INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+};
+name = "Debug";
+};
+1AD25FD4056BA54CB3F67588 = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+SDKROOT = "iphoneos";
+SWIFT_VERSION = "5.0";
+CLANG_ENABLE_MODULES = "YES";
+CLANG_ENABLE_OBJC_ARC = "YES";
+ENABLE_USER_SCRIPT_SANDBOXING = "YES";
+CODE_SIGN_STYLE = "Automatic";
+TARGETED_DEVICE_FAMILY = "1";
+GENERATE_INFOPLIST_FILE = "YES";
+MARKETING_VERSION = "1.0";
+CURRENT_PROJECT_VERSION = "1";
+PRODUCT_NAME = "$(TARGET_NAME)";
+PRODUCT_BUNDLE_IDENTIFIER = "com.yinyueyang.calendarsix";
+SWIFT_OPTIMIZATION_LEVEL = "-O";
+DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+DEVELOPMENT_TEAM = "7768G8T96V";
+ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon";
+ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = ("CalendarDate_en_w1_d1", "CalendarDate_en_w1_d2", "CalendarDate_en_w1_d3", "CalendarDate_en_w1_d4", "CalendarDate_en_w1_d5", "CalendarDate_en_w1_d6", "CalendarDate_en_w1_d7", "CalendarDate_en_w1_d8", "CalendarDate_en_w1_d9", "CalendarDate_en_w1_d10", "CalendarDate_en_w1_d11", "CalendarDate_en_w1_d12", "CalendarDate_en_w1_d13", "CalendarDate_en_w1_d14", "CalendarDate_en_w1_d15", "CalendarDate_en_w1_d16", "CalendarDate_en_w1_d17", "CalendarDate_en_w1_d18", "CalendarDate_en_w1_d19", "CalendarDate_en_w1_d20", "CalendarDate_en_w1_d21", "CalendarDate_en_w1_d22", "CalendarDate_en_w1_d23", "CalendarDate_en_w1_d24", "CalendarDate_en_w1_d25", "CalendarDate_en_w1_d26", "CalendarDate_en_w1_d27", "CalendarDate_en_w1_d28", "CalendarDate_en_w1_d29", "CalendarDate_en_w1_d30", "CalendarDate_en_w1_d31", "CalendarDate_en_w2_d1", "CalendarDate_en_w2_d2", "CalendarDate_en_w2_d3", "CalendarDate_en_w2_d4", "CalendarDate_en_w2_d5", "CalendarDate_en_w2_d6", "CalendarDate_en_w2_d7", "CalendarDate_en_w2_d8", "CalendarDate_en_w2_d9", "CalendarDate_en_w2_d10", "CalendarDate_en_w2_d11", "CalendarDate_en_w2_d12", "CalendarDate_en_w2_d13", "CalendarDate_en_w2_d14", "CalendarDate_en_w2_d15", "CalendarDate_en_w2_d16", "CalendarDate_en_w2_d17", "CalendarDate_en_w2_d18", "CalendarDate_en_w2_d19", "CalendarDate_en_w2_d20", "CalendarDate_en_w2_d21", "CalendarDate_en_w2_d22", "CalendarDate_en_w2_d23", "CalendarDate_en_w2_d24", "CalendarDate_en_w2_d25", "CalendarDate_en_w2_d26", "CalendarDate_en_w2_d27", "CalendarDate_en_w2_d28", "CalendarDate_en_w2_d29", "CalendarDate_en_w2_d30", "CalendarDate_en_w2_d31", "CalendarDate_en_w3_d1", "CalendarDate_en_w3_d2", "CalendarDate_en_w3_d3", "CalendarDate_en_w3_d4", "CalendarDate_en_w3_d5", "CalendarDate_en_w3_d6", "CalendarDate_en_w3_d7", "CalendarDate_en_w3_d8", "CalendarDate_en_w3_d9", "CalendarDate_en_w3_d10", "CalendarDate_en_w3_d11", "CalendarDate_en_w3_d12", "CalendarDate_en_w3_d13", "CalendarDate_en_w3_d14", "CalendarDate_en_w3_d15", "CalendarDate_en_w3_d16", "CalendarDate_en_w3_d17", "CalendarDate_en_w3_d18", "CalendarDate_en_w3_d19", "CalendarDate_en_w3_d20", "CalendarDate_en_w3_d21", "CalendarDate_en_w3_d22", "CalendarDate_en_w3_d23", "CalendarDate_en_w3_d24", "CalendarDate_en_w3_d25", "CalendarDate_en_w3_d26", "CalendarDate_en_w3_d27", "CalendarDate_en_w3_d28", "CalendarDate_en_w3_d29", "CalendarDate_en_w3_d30", "CalendarDate_en_w3_d31", "CalendarDate_en_w4_d1", "CalendarDate_en_w4_d2", "CalendarDate_en_w4_d3", "CalendarDate_en_w4_d4", "CalendarDate_en_w4_d5", "CalendarDate_en_w4_d6", "CalendarDate_en_w4_d7", "CalendarDate_en_w4_d8", "CalendarDate_en_w4_d9", "CalendarDate_en_w4_d10", "CalendarDate_en_w4_d11", "CalendarDate_en_w4_d12", "CalendarDate_en_w4_d13", "CalendarDate_en_w4_d14", "CalendarDate_en_w4_d15", "CalendarDate_en_w4_d16", "CalendarDate_en_w4_d17", "CalendarDate_en_w4_d18", "CalendarDate_en_w4_d19", "CalendarDate_en_w4_d20", "CalendarDate_en_w4_d21", "CalendarDate_en_w4_d22", "CalendarDate_en_w4_d23", "CalendarDate_en_w4_d24", "CalendarDate_en_w4_d25", "CalendarDate_en_w4_d26", "CalendarDate_en_w4_d27", "CalendarDate_en_w4_d28", "CalendarDate_en_w4_d29", "CalendarDate_en_w4_d30", "CalendarDate_en_w4_d31", "CalendarDate_en_w5_d1", "CalendarDate_en_w5_d2", "CalendarDate_en_w5_d3", "CalendarDate_en_w5_d4", "CalendarDate_en_w5_d5", "CalendarDate_en_w5_d6", "CalendarDate_en_w5_d7", "CalendarDate_en_w5_d8", "CalendarDate_en_w5_d9", "CalendarDate_en_w5_d10", "CalendarDate_en_w5_d11", "CalendarDate_en_w5_d12", "CalendarDate_en_w5_d13", "CalendarDate_en_w5_d14", "CalendarDate_en_w5_d15", "CalendarDate_en_w5_d16", "CalendarDate_en_w5_d17", "CalendarDate_en_w5_d18", "CalendarDate_en_w5_d19", "CalendarDate_en_w5_d20", "CalendarDate_en_w5_d21", "CalendarDate_en_w5_d22", "CalendarDate_en_w5_d23", "CalendarDate_en_w5_d24", "CalendarDate_en_w5_d25", "CalendarDate_en_w5_d26", "CalendarDate_en_w5_d27", "CalendarDate_en_w5_d28", "CalendarDate_en_w5_d29", "CalendarDate_en_w5_d30", "CalendarDate_en_w5_d31", "CalendarDate_en_w6_d1", "CalendarDate_en_w6_d2", "CalendarDate_en_w6_d3", "CalendarDate_en_w6_d4", "CalendarDate_en_w6_d5", "CalendarDate_en_w6_d6", "CalendarDate_en_w6_d7", "CalendarDate_en_w6_d8", "CalendarDate_en_w6_d9", "CalendarDate_en_w6_d10", "CalendarDate_en_w6_d11", "CalendarDate_en_w6_d12", "CalendarDate_en_w6_d13", "CalendarDate_en_w6_d14", "CalendarDate_en_w6_d15", "CalendarDate_en_w6_d16", "CalendarDate_en_w6_d17", "CalendarDate_en_w6_d18", "CalendarDate_en_w6_d19", "CalendarDate_en_w6_d20", "CalendarDate_en_w6_d21", "CalendarDate_en_w6_d22", "CalendarDate_en_w6_d23", "CalendarDate_en_w6_d24", "CalendarDate_en_w6_d25", "CalendarDate_en_w6_d26", "CalendarDate_en_w6_d27", "CalendarDate_en_w6_d28", "CalendarDate_en_w6_d29", "CalendarDate_en_w6_d30", "CalendarDate_en_w6_d31", "CalendarDate_en_w7_d1", "CalendarDate_en_w7_d2", "CalendarDate_en_w7_d3", "CalendarDate_en_w7_d4", "CalendarDate_en_w7_d5", "CalendarDate_en_w7_d6", "CalendarDate_en_w7_d7", "CalendarDate_en_w7_d8", "CalendarDate_en_w7_d9", "CalendarDate_en_w7_d10", "CalendarDate_en_w7_d11", "CalendarDate_en_w7_d12", "CalendarDate_en_w7_d13", "CalendarDate_en_w7_d14", "CalendarDate_en_w7_d15", "CalendarDate_en_w7_d16", "CalendarDate_en_w7_d17", "CalendarDate_en_w7_d18", "CalendarDate_en_w7_d19", "CalendarDate_en_w7_d20", "CalendarDate_en_w7_d21", "CalendarDate_en_w7_d22", "CalendarDate_en_w7_d23", "CalendarDate_en_w7_d24", "CalendarDate_en_w7_d25", "CalendarDate_en_w7_d26", "CalendarDate_en_w7_d27", "CalendarDate_en_w7_d28", "CalendarDate_en_w7_d29", "CalendarDate_en_w7_d30", "CalendarDate_en_w7_d31", "CalendarDate_zh-Hans_w1_d1", "CalendarDate_zh-Hans_w1_d2", "CalendarDate_zh-Hans_w1_d3", "CalendarDate_zh-Hans_w1_d4", "CalendarDate_zh-Hans_w1_d5", "CalendarDate_zh-Hans_w1_d6", "CalendarDate_zh-Hans_w1_d7", "CalendarDate_zh-Hans_w1_d8", "CalendarDate_zh-Hans_w1_d9", "CalendarDate_zh-Hans_w1_d10", "CalendarDate_zh-Hans_w1_d11", "CalendarDate_zh-Hans_w1_d12", "CalendarDate_zh-Hans_w1_d13", "CalendarDate_zh-Hans_w1_d14", "CalendarDate_zh-Hans_w1_d15", "CalendarDate_zh-Hans_w1_d16", "CalendarDate_zh-Hans_w1_d17", "CalendarDate_zh-Hans_w1_d18", "CalendarDate_zh-Hans_w1_d19", "CalendarDate_zh-Hans_w1_d20", "CalendarDate_zh-Hans_w1_d21", "CalendarDate_zh-Hans_w1_d22", "CalendarDate_zh-Hans_w1_d23", "CalendarDate_zh-Hans_w1_d24", "CalendarDate_zh-Hans_w1_d25", "CalendarDate_zh-Hans_w1_d26", "CalendarDate_zh-Hans_w1_d27", "CalendarDate_zh-Hans_w1_d28", "CalendarDate_zh-Hans_w1_d29", "CalendarDate_zh-Hans_w1_d30", "CalendarDate_zh-Hans_w1_d31", "CalendarDate_zh-Hans_w2_d1", "CalendarDate_zh-Hans_w2_d2", "CalendarDate_zh-Hans_w2_d3", "CalendarDate_zh-Hans_w2_d4", "CalendarDate_zh-Hans_w2_d5", "CalendarDate_zh-Hans_w2_d6", "CalendarDate_zh-Hans_w2_d7", "CalendarDate_zh-Hans_w2_d8", "CalendarDate_zh-Hans_w2_d9", "CalendarDate_zh-Hans_w2_d10", "CalendarDate_zh-Hans_w2_d11", "CalendarDate_zh-Hans_w2_d12", "CalendarDate_zh-Hans_w2_d13", "CalendarDate_zh-Hans_w2_d14", "CalendarDate_zh-Hans_w2_d15", "CalendarDate_zh-Hans_w2_d16", "CalendarDate_zh-Hans_w2_d17", "CalendarDate_zh-Hans_w2_d18", "CalendarDate_zh-Hans_w2_d19", "CalendarDate_zh-Hans_w2_d20", "CalendarDate_zh-Hans_w2_d21", "CalendarDate_zh-Hans_w2_d22", "CalendarDate_zh-Hans_w2_d23", "CalendarDate_zh-Hans_w2_d24", "CalendarDate_zh-Hans_w2_d25", "CalendarDate_zh-Hans_w2_d26", "CalendarDate_zh-Hans_w2_d27", "CalendarDate_zh-Hans_w2_d28", "CalendarDate_zh-Hans_w2_d29", "CalendarDate_zh-Hans_w2_d30", "CalendarDate_zh-Hans_w2_d31", "CalendarDate_zh-Hans_w3_d1", "CalendarDate_zh-Hans_w3_d2", "CalendarDate_zh-Hans_w3_d3", "CalendarDate_zh-Hans_w3_d4", "CalendarDate_zh-Hans_w3_d5", "CalendarDate_zh-Hans_w3_d6", "CalendarDate_zh-Hans_w3_d7", "CalendarDate_zh-Hans_w3_d8", "CalendarDate_zh-Hans_w3_d9", "CalendarDate_zh-Hans_w3_d10", "CalendarDate_zh-Hans_w3_d11", "CalendarDate_zh-Hans_w3_d12", "CalendarDate_zh-Hans_w3_d13", "CalendarDate_zh-Hans_w3_d14", "CalendarDate_zh-Hans_w3_d15", "CalendarDate_zh-Hans_w3_d16", "CalendarDate_zh-Hans_w3_d17", "CalendarDate_zh-Hans_w3_d18", "CalendarDate_zh-Hans_w3_d19", "CalendarDate_zh-Hans_w3_d20", "CalendarDate_zh-Hans_w3_d21", "CalendarDate_zh-Hans_w3_d22", "CalendarDate_zh-Hans_w3_d23", "CalendarDate_zh-Hans_w3_d24", "CalendarDate_zh-Hans_w3_d25", "CalendarDate_zh-Hans_w3_d26", "CalendarDate_zh-Hans_w3_d27", "CalendarDate_zh-Hans_w3_d28", "CalendarDate_zh-Hans_w3_d29", "CalendarDate_zh-Hans_w3_d30", "CalendarDate_zh-Hans_w3_d31", "CalendarDate_zh-Hans_w4_d1", "CalendarDate_zh-Hans_w4_d2", "CalendarDate_zh-Hans_w4_d3", "CalendarDate_zh-Hans_w4_d4", "CalendarDate_zh-Hans_w4_d5", "CalendarDate_zh-Hans_w4_d6", "CalendarDate_zh-Hans_w4_d7", "CalendarDate_zh-Hans_w4_d8", "CalendarDate_zh-Hans_w4_d9", "CalendarDate_zh-Hans_w4_d10", "CalendarDate_zh-Hans_w4_d11", "CalendarDate_zh-Hans_w4_d12", "CalendarDate_zh-Hans_w4_d13", "CalendarDate_zh-Hans_w4_d14", "CalendarDate_zh-Hans_w4_d15", "CalendarDate_zh-Hans_w4_d16", "CalendarDate_zh-Hans_w4_d17", "CalendarDate_zh-Hans_w4_d18", "CalendarDate_zh-Hans_w4_d19", "CalendarDate_zh-Hans_w4_d20", "CalendarDate_zh-Hans_w4_d21", "CalendarDate_zh-Hans_w4_d22", "CalendarDate_zh-Hans_w4_d23", "CalendarDate_zh-Hans_w4_d24", "CalendarDate_zh-Hans_w4_d25", "CalendarDate_zh-Hans_w4_d26", "CalendarDate_zh-Hans_w4_d27", "CalendarDate_zh-Hans_w4_d28", "CalendarDate_zh-Hans_w4_d29", "CalendarDate_zh-Hans_w4_d30", "CalendarDate_zh-Hans_w4_d31", "CalendarDate_zh-Hans_w5_d1", "CalendarDate_zh-Hans_w5_d2", "CalendarDate_zh-Hans_w5_d3", "CalendarDate_zh-Hans_w5_d4", "CalendarDate_zh-Hans_w5_d5", "CalendarDate_zh-Hans_w5_d6", "CalendarDate_zh-Hans_w5_d7", "CalendarDate_zh-Hans_w5_d8", "CalendarDate_zh-Hans_w5_d9", "CalendarDate_zh-Hans_w5_d10", "CalendarDate_zh-Hans_w5_d11", "CalendarDate_zh-Hans_w5_d12", "CalendarDate_zh-Hans_w5_d13", "CalendarDate_zh-Hans_w5_d14", "CalendarDate_zh-Hans_w5_d15", "CalendarDate_zh-Hans_w5_d16", "CalendarDate_zh-Hans_w5_d17", "CalendarDate_zh-Hans_w5_d18", "CalendarDate_zh-Hans_w5_d19", "CalendarDate_zh-Hans_w5_d20", "CalendarDate_zh-Hans_w5_d21", "CalendarDate_zh-Hans_w5_d22", "CalendarDate_zh-Hans_w5_d23", "CalendarDate_zh-Hans_w5_d24", "CalendarDate_zh-Hans_w5_d25", "CalendarDate_zh-Hans_w5_d26", "CalendarDate_zh-Hans_w5_d27", "CalendarDate_zh-Hans_w5_d28", "CalendarDate_zh-Hans_w5_d29", "CalendarDate_zh-Hans_w5_d30", "CalendarDate_zh-Hans_w5_d31", "CalendarDate_zh-Hans_w6_d1", "CalendarDate_zh-Hans_w6_d2", "CalendarDate_zh-Hans_w6_d3", "CalendarDate_zh-Hans_w6_d4", "CalendarDate_zh-Hans_w6_d5", "CalendarDate_zh-Hans_w6_d6", "CalendarDate_zh-Hans_w6_d7", "CalendarDate_zh-Hans_w6_d8", "CalendarDate_zh-Hans_w6_d9", "CalendarDate_zh-Hans_w6_d10", "CalendarDate_zh-Hans_w6_d11", "CalendarDate_zh-Hans_w6_d12", "CalendarDate_zh-Hans_w6_d13", "CalendarDate_zh-Hans_w6_d14", "CalendarDate_zh-Hans_w6_d15", "CalendarDate_zh-Hans_w6_d16", "CalendarDate_zh-Hans_w6_d17", "CalendarDate_zh-Hans_w6_d18", "CalendarDate_zh-Hans_w6_d19", "CalendarDate_zh-Hans_w6_d20", "CalendarDate_zh-Hans_w6_d21", "CalendarDate_zh-Hans_w6_d22", "CalendarDate_zh-Hans_w6_d23", "CalendarDate_zh-Hans_w6_d24", "CalendarDate_zh-Hans_w6_d25", "CalendarDate_zh-Hans_w6_d26", "CalendarDate_zh-Hans_w6_d27", "CalendarDate_zh-Hans_w6_d28", "CalendarDate_zh-Hans_w6_d29", "CalendarDate_zh-Hans_w6_d30", "CalendarDate_zh-Hans_w6_d31", "CalendarDate_zh-Hans_w7_d1", "CalendarDate_zh-Hans_w7_d2", "CalendarDate_zh-Hans_w7_d3", "CalendarDate_zh-Hans_w7_d4", "CalendarDate_zh-Hans_w7_d5", "CalendarDate_zh-Hans_w7_d6", "CalendarDate_zh-Hans_w7_d7", "CalendarDate_zh-Hans_w7_d8", "CalendarDate_zh-Hans_w7_d9", "CalendarDate_zh-Hans_w7_d10", "CalendarDate_zh-Hans_w7_d11", "CalendarDate_zh-Hans_w7_d12", "CalendarDate_zh-Hans_w7_d13", "CalendarDate_zh-Hans_w7_d14", "CalendarDate_zh-Hans_w7_d15", "CalendarDate_zh-Hans_w7_d16", "CalendarDate_zh-Hans_w7_d17", "CalendarDate_zh-Hans_w7_d18", "CalendarDate_zh-Hans_w7_d19", "CalendarDate_zh-Hans_w7_d20", "CalendarDate_zh-Hans_w7_d21", "CalendarDate_zh-Hans_w7_d22", "CalendarDate_zh-Hans_w7_d23", "CalendarDate_zh-Hans_w7_d24", "CalendarDate_zh-Hans_w7_d25", "CalendarDate_zh-Hans_w7_d26", "CalendarDate_zh-Hans_w7_d27", "CalendarDate_zh-Hans_w7_d28", "CalendarDate_zh-Hans_w7_d29", "CalendarDate_zh-Hans_w7_d30", "CalendarDate_zh-Hans_w7_d31");
+INFOPLIST_FILE = "CalendarSix/Info.plist";
+INFOPLIST_KEY_CFBundleDisplayName = "Calendar";
+INFOPLIST_KEY_UILaunchScreen_Generation = "YES";
+INFOPLIST_KEY_UIStatusBarStyle = "UIStatusBarStyleDefault";
+INFOPLIST_KEY_UIUserInterfaceStyle = "Light";
+INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+};
+name = "Release";
+};
+0655A57AA51E6FCC22ED27A9 = {
+isa = "XCConfigurationList";
+buildConfigurations = ("B6440D4611352338DA510B10", "1AD25FD4056BA54CB3F67588");
+defaultConfigurationIsVisible = "0";
+defaultConfigurationName = "Release";
+};
+F03279E7711DF9FDC9F79119 = {
+isa = "PBXNativeTarget";
+buildConfigurationList = "0655A57AA51E6FCC22ED27A9";
+buildPhases = ("0519798AD9EC59E9BEC29608", "FB73030C4DD994BB377F051A", "AE44F0B3D2562ED7D054B17F");
+buildRules = ();
+dependencies = ();
+fileSystemSynchronizedGroups = ("8A5062E94C7BF0514CEE9CFC");
+name = "CalendarSix";
+productName = "CalendarSix";
+productReference = "B9FDF42773FA2FBC4E287BC1";
+productType = "com.apple.product-type.application";
+};
+C819534AC2086CB7221C94F8 = {
+isa = "PBXFileSystemSynchronizedRootGroup";
+path = "CalendarSixTests";
+sourceTree = "<group>";
+};
+4407199336AF2528D5D1B4D7 = {
+isa = "PBXFileReference";
+explicitFileType = "wrapper.cfbundle";
+path = "CalendarSixTests.xctest";
+sourceTree = "BUILT_PRODUCTS_DIR";
+};
+7236CC1DB4E939B3015E41D5 = {
+isa = "PBXSourcesBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+69AB32958BEDC3BE8563FAB3 = {
+isa = "PBXFrameworksBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+5B3923AAD7808672350C6609 = {
+isa = "PBXResourcesBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+B17F1780CE1FA63630218DAE = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+SDKROOT = "iphoneos";
+SWIFT_VERSION = "5.0";
+CLANG_ENABLE_MODULES = "YES";
+CLANG_ENABLE_OBJC_ARC = "YES";
+ENABLE_USER_SCRIPT_SANDBOXING = "YES";
+CODE_SIGN_STYLE = "Automatic";
+TARGETED_DEVICE_FAMILY = "1";
+GENERATE_INFOPLIST_FILE = "YES";
+MARKETING_VERSION = "1.0";
+CURRENT_PROJECT_VERSION = "1";
+PRODUCT_NAME = "$(TARGET_NAME)";
+PRODUCT_BUNDLE_IDENTIFIER = "com.yinyueyang.calendarsixtests";
+SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+DEBUG_INFORMATION_FORMAT = "dwarf";
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+ENABLE_TESTABILITY = "YES";
+TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CalendarSix.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CalendarSix";
+BUNDLE_LOADER = "$(TEST_HOST)";
+};
+name = "Debug";
+};
+EA1928B3DB45EFB9E56BEC93 = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+SDKROOT = "iphoneos";
+SWIFT_VERSION = "5.0";
+CLANG_ENABLE_MODULES = "YES";
+CLANG_ENABLE_OBJC_ARC = "YES";
+ENABLE_USER_SCRIPT_SANDBOXING = "YES";
+CODE_SIGN_STYLE = "Automatic";
+TARGETED_DEVICE_FAMILY = "1";
+GENERATE_INFOPLIST_FILE = "YES";
+MARKETING_VERSION = "1.0";
+CURRENT_PROJECT_VERSION = "1";
+PRODUCT_NAME = "$(TARGET_NAME)";
+PRODUCT_BUNDLE_IDENTIFIER = "com.yinyueyang.calendarsixtests";
+SWIFT_OPTIMIZATION_LEVEL = "-O";
+DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CalendarSix.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CalendarSix";
+BUNDLE_LOADER = "$(TEST_HOST)";
+};
+name = "Release";
+};
+944DAB572F1F70246253AAA9 = {
+isa = "XCConfigurationList";
+buildConfigurations = ("B17F1780CE1FA63630218DAE", "EA1928B3DB45EFB9E56BEC93");
+defaultConfigurationIsVisible = "0";
+defaultConfigurationName = "Release";
+};
+54C8002954867EB06DEA97F0 = {
+isa = "PBXContainerItemProxy";
+containerPortal = "98F54143AB4E86B28C3AFEE0";
+proxyType = "1";
+remoteGlobalIDString = "F03279E7711DF9FDC9F79119";
+remoteInfo = "CalendarSix";
+};
+0A1D702EBDF90316FEAE52BB = {
+isa = "PBXTargetDependency";
+target = "F03279E7711DF9FDC9F79119";
+targetProxy = "54C8002954867EB06DEA97F0";
+};
+CFC669FD85DCEF2F3144A9E0 = {
+isa = "PBXNativeTarget";
+buildConfigurationList = "944DAB572F1F70246253AAA9";
+buildPhases = ("7236CC1DB4E939B3015E41D5", "69AB32958BEDC3BE8563FAB3", "5B3923AAD7808672350C6609");
+buildRules = ();
+dependencies = ("0A1D702EBDF90316FEAE52BB");
+fileSystemSynchronizedGroups = ("C819534AC2086CB7221C94F8");
+name = "CalendarSixTests";
+productName = "CalendarSixTests";
+productReference = "4407199336AF2528D5D1B4D7";
+productType = "com.apple.product-type.bundle.unit-test";
+};
+5EEF4A30A7E94F7A5B1A4C66 = {
+isa = "PBXFileSystemSynchronizedRootGroup";
+path = "CalendarSixUITests";
+sourceTree = "<group>";
+};
+8CA4B72219C3E0B3F2945487 = {
+isa = "PBXFileReference";
+explicitFileType = "wrapper.cfbundle";
+path = "CalendarSixUITests.xctest";
+sourceTree = "BUILT_PRODUCTS_DIR";
+};
+D8FCFB179B5977CF9FD93DF8 = {
+isa = "PBXSourcesBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+015558635807FF7407C5ACB7 = {
+isa = "PBXFrameworksBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+C081785B90152197EE3B6A1E = {
+isa = "PBXResourcesBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+B163255CAA648B7F6047C2C7 = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+SDKROOT = "iphoneos";
+SWIFT_VERSION = "5.0";
+CLANG_ENABLE_MODULES = "YES";
+CLANG_ENABLE_OBJC_ARC = "YES";
+ENABLE_USER_SCRIPT_SANDBOXING = "YES";
+CODE_SIGN_STYLE = "Automatic";
+TARGETED_DEVICE_FAMILY = "1";
+GENERATE_INFOPLIST_FILE = "YES";
+MARKETING_VERSION = "1.0";
+CURRENT_PROJECT_VERSION = "1";
+PRODUCT_NAME = "$(TARGET_NAME)";
+PRODUCT_BUNDLE_IDENTIFIER = "com.yinyueyang.calendarsixuitests";
+SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+DEBUG_INFORMATION_FORMAT = "dwarf";
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+ENABLE_TESTABILITY = "YES";
+TEST_TARGET_NAME = "CalendarSix";
+};
+name = "Debug";
+};
+A6124318F4540883A8FB7B24 = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+SDKROOT = "iphoneos";
+SWIFT_VERSION = "5.0";
+CLANG_ENABLE_MODULES = "YES";
+CLANG_ENABLE_OBJC_ARC = "YES";
+ENABLE_USER_SCRIPT_SANDBOXING = "YES";
+CODE_SIGN_STYLE = "Automatic";
+TARGETED_DEVICE_FAMILY = "1";
+GENERATE_INFOPLIST_FILE = "YES";
+MARKETING_VERSION = "1.0";
+CURRENT_PROJECT_VERSION = "1";
+PRODUCT_NAME = "$(TARGET_NAME)";
+PRODUCT_BUNDLE_IDENTIFIER = "com.yinyueyang.calendarsixuitests";
+SWIFT_OPTIMIZATION_LEVEL = "-O";
+DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+TEST_TARGET_NAME = "CalendarSix";
+};
+name = "Release";
+};
+55E8D29D7B643AD313952A1F = {
+isa = "XCConfigurationList";
+buildConfigurations = ("B163255CAA648B7F6047C2C7", "A6124318F4540883A8FB7B24");
+defaultConfigurationIsVisible = "0";
+defaultConfigurationName = "Release";
+};
+8A346BCE8C03C55AA49843B4 = {
+isa = "PBXContainerItemProxy";
+containerPortal = "98F54143AB4E86B28C3AFEE0";
+proxyType = "1";
+remoteGlobalIDString = "F03279E7711DF9FDC9F79119";
+remoteInfo = "CalendarSix";
+};
+52F8AC12DDA92522B5BC5448 = {
+isa = "PBXTargetDependency";
+target = "F03279E7711DF9FDC9F79119";
+targetProxy = "8A346BCE8C03C55AA49843B4";
+};
+81E4DD5BD05B5047248E03A6 = {
+isa = "PBXNativeTarget";
+buildConfigurationList = "55E8D29D7B643AD313952A1F";
+buildPhases = ("D8FCFB179B5977CF9FD93DF8", "015558635807FF7407C5ACB7", "C081785B90152197EE3B6A1E");
+buildRules = ();
+dependencies = ("52F8AC12DDA92522B5BC5448");
+fileSystemSynchronizedGroups = ("5EEF4A30A7E94F7A5B1A4C66");
+name = "CalendarSixUITests";
+productName = "CalendarSixUITests";
+productReference = "8CA4B72219C3E0B3F2945487";
+productType = "com.apple.product-type.bundle.ui-testing";
+};
+FBDC4F23F93125BBEEAE800C = {
+isa = "PBXGroup";
+children = ("B9FDF42773FA2FBC4E287BC1", "4407199336AF2528D5D1B4D7", "8CA4B72219C3E0B3F2945487");
+name = "Products";
+sourceTree = "<group>";
+};
+B28B7AF69320201D1CF206EB = {
+isa = "PBXGroup";
+children = ("8A5062E94C7BF0514CEE9CFC", "C819534AC2086CB7221C94F8", "5EEF4A30A7E94F7A5B1A4C66", "FBDC4F23F93125BBEEAE800C");
+sourceTree = "<group>";
+};
+ED8772ADEC3A6C25161BC957 = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+ALWAYS_SEARCH_USER_PATHS = "NO";
+CLANG_WARN_DOCUMENTATION_COMMENTS = "YES";
+GCC_WARN_UNUSED_VARIABLE = "YES";
+};
+name = "Debug";
+};
+00F209874A1F7309F6DCEAA7 = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+ALWAYS_SEARCH_USER_PATHS = "NO";
+CLANG_WARN_DOCUMENTATION_COMMENTS = "YES";
+GCC_WARN_UNUSED_VARIABLE = "YES";
+};
+name = "Release";
+};
+640DC9EFD529235A8D9E2727 = {
+isa = "XCConfigurationList";
+buildConfigurations = ("ED8772ADEC3A6C25161BC957", "00F209874A1F7309F6DCEAA7");
+defaultConfigurationIsVisible = "0";
+defaultConfigurationName = "Release";
+};
+98F54143AB4E86B28C3AFEE0 = {
+isa = "PBXProject";
+attributes = {
+BuildIndependentTargetsInParallel = "YES";
+LastUpgradeCheck = "2700";
+TargetAttributes = {
+F03279E7711DF9FDC9F79119 = {
+CreatedOnToolsVersion = "27.0";
+};
+CFC669FD85DCEF2F3144A9E0 = {
+CreatedOnToolsVersion = "27.0";
+};
+81E4DD5BD05B5047248E03A6 = {
+CreatedOnToolsVersion = "27.0";
+};
+};
+};
+buildConfigurationList = "640DC9EFD529235A8D9E2727";
+compatibilityVersion = "Xcode 16.0";
+developmentRegion = "en";
+hasScannedForEncodings = "0";
+knownRegions = ("en", "zh-Hans", "Base");
+mainGroup = "B28B7AF69320201D1CF206EB";
+productRefGroup = "FBDC4F23F93125BBEEAE800C";
+projectDirPath = "";
+projectRoot = "";
+targets = ("F03279E7711DF9FDC9F79119", "CFC669FD85DCEF2F3144A9E0", "81E4DD5BD05B5047248E03A6");
+preferredProjectObjectVersion = "77";
+};
+};
+rootObject = "98F54143AB4E86B28C3AFEE0";
+}
