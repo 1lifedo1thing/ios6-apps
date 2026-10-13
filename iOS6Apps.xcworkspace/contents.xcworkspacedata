@@ -12,4 +12,6 @@
    </FileRef>
    <FileRef location="group:apps/calendar/CalendarSix.xcodeproj">
    </FileRef>
+   <FileRef location="group:apps/reminders/RemindersSix.xcodeproj">
+   </FileRef>
 </Workspace>

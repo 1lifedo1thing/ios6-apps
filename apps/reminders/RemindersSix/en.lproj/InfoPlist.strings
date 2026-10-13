@@ -1,0 +1,3 @@
+"CFBundleDisplayName" = "Reminders";
+"NSRemindersFullAccessUsageDescription" = "Reminders reads and edits system reminders only when you choose to connect your accounts.";
+"NSLocationWhenInUseUsageDescription" = "Reminders uses your location for alerts when you arrive at or leave a place.";

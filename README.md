@@ -4,7 +4,7 @@ A collection of native app recreations inspired by the skeuomorphic design of iO
 
 ## Getting started
 
-Open `iOS6Apps.xcworkspace` at the collection root and select the app's scheme. Weather uses `WeatherSix`; Notes uses `NotesSix`; Calculator uses `CalculatorSix`; Compass uses `CompassSix`; Clock uses `ClockSix`; Calendar uses `CalendarSix`. All require iOS 17 or later.
+Open `iOS6Apps.xcworkspace` at the collection root and select the app's scheme. Weather uses `WeatherSix`; Notes uses `NotesSix`; Calculator uses `CalculatorSix`; Compass uses `CompassSix`; Clock uses `ClockSix`; Calendar uses `CalendarSix`; Reminders uses `RemindersSix`. All require iOS 17 or later.
 
 | App | Project | Documentation |
 | --- | --- | --- |
@@ -14,6 +14,7 @@ Open `iOS6Apps.xcworkspace` at the collection root and select the app's scheme. 
 | Calculator | `apps/calculator/CalculatorSix.xcodeproj` | [Run instructions](apps/calculator/README.md), [Verification record](apps/calculator/docs/verification.md) |
 | Clock | `apps/clock/ClockSix.xcodeproj` | [Run instructions](apps/clock/README.md), [Verification record](apps/clock/docs/verification.md) |
 | Calendar | `apps/calendar/CalendarSix.xcodeproj` | [Run instructions](apps/calendar/README.md), [Verification record](apps/calendar/docs/verification.md) |
+| Reminders | `apps/reminders/RemindersSix.xcodeproj` | [Run instructions](apps/reminders/README.md), [Verification record](apps/reminders/docs/verification.md) |
 
 Weather defaults to Celsius, and its app icon displays `23°`. Use Current Location requests foreground location access and loads live weather. If access was denied, Open Settings provides a recovery path. Set a simulated location using Simulator → Features → Location when running on Simulator.
 
@@ -26,6 +27,8 @@ Calculator recreates the olive LCD, glossy memory and number keys, tall orange e
 Compass recreates the iOS 6 walnut cabinet, brass rim, ivory compass rose, bearing, coordinates, Maps shortcut, and magnetic/true-north settings. Physical devices use Core Location heading and location updates. Simulator previews are explicitly labeled sample data. It uses the same English/Simplified Chinese language rules as Weather.
 
 Calendar recreates the blue-gray glossy chrome, embossed month grid, selected-day agenda, searchable event list, day timeline, and rotation-driven week view of the iPhone calendar. It includes persistent local calendars, event editing, recurrence and exception scopes, all-day events, reminders, and optional EventKit access to configured system accounts. It follows Weather's system/per-app English and Simplified Chinese language rules. Launch with `--demo` for isolated sample events; normal launches start with empty local calendars.
+
+Reminders recreates the black pebbled leather, off-white paper, red list headings, double margin rules, square checkboxes, and dimensional controls of iOS 6. It includes persistent lists and reminders, completion history, search, manual ordering, date and location alerts, recurrence, priorities, notes, a seven-day date strip, and optional system Reminders accounts through EventKit. It follows Weather's English/Simplified Chinese language behavior. Launch with `--demo` for isolated sample lists; ordinary launches start with an empty local list.
 
 ## Shared design language
 
@@ -41,6 +44,14 @@ ios6-apps/
 ├── README.md
 ├── iOS6Apps.xcworkspace/
 ├── apps/
+│   ├── reminders/
+│   │   ├── RemindersSix.xcodeproj/
+│   │   ├── RemindersSix/
+│   │   ├── RemindersSixTests/
+│   │   ├── RemindersSixUITests/
+│   │   ├── scripts/
+│   │   ├── docs/
+│   │   └── README.md
 │   ├── calendar/
 │   │   ├── CalendarSix.xcodeproj/
 │   │   ├── CalendarSix/
