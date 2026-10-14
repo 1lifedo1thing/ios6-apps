@@ -1,0 +1,5 @@
+"CFBundleDisplayName" = "相机";
+"NSCameraUsageDescription" = "相机需要使用摄像头来拍摄照片、录制视频和拍摄全景。";
+"NSMicrophoneUsageDescription" = "相机需要使用麦克风来录制视频中的声音。";
+"NSPhotoLibraryAddUsageDescription" = "相机需要将拍摄的照片和视频保存到你的照片图库。";
+"NSPhotoLibraryUsageDescription" = "相机允许你选择照片和视频并在相机胶卷中浏览。";

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>NSCameraUsageDescription</key><string>Camera uses the camera to take photos, record videos, and capture panoramas.</string>
+  <key>NSMicrophoneUsageDescription</key><string>Camera uses the microphone to record sound with your videos.</string>
+  <key>NSPhotoLibraryAddUsageDescription</key><string>Camera saves the photos and videos you take to your photo library.</string>
+  <key>NSPhotoLibraryUsageDescription</key><string>Camera lets you choose photos and videos to view in your camera roll.</string>
+  <key>UIApplicationSupportsIndirectInputEvents</key><true/>
+</dict></plist>

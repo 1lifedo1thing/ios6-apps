@@ -1,0 +1,15 @@
+{
+  "device" : "iPhone",
+  "finishedAt" : "2026-10-14T13:00:39Z",
+  "frontCamera" : "passed: front camera JPEG captured",
+  "hdr" : "passed: three-exposure capture fused; HDR and normal JPEGs saved",
+  "photo" : "passed: 3024x4032 JPEG",
+  "result" : "passed",
+  "sessionRecovery" : "passed: stop\/start followed by real capture",
+  "startedAt" : "2026-10-14T13:00:03Z",
+  "switchCancellation" : "passed: cancel during input replacement; session resumed",
+  "system" : "27.0.1",
+  "video" : "passed: 3.1983333333333333 seconds, one video track and one audio track",
+  "videoCameraSwitch" : "passed: front\/rear frames ready; movie output restored",
+  "videoSnapshot" : "passed: real still captured while recording"
+}

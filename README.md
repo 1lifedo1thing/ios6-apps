@@ -4,7 +4,7 @@ A collection of native app recreations inspired by the skeuomorphic design of iO
 
 ## Getting started
 
-Open `iOS6Apps.xcworkspace` at the collection root and select the app's scheme. Weather uses `WeatherSix`; Notes uses `NotesSix`; Calculator uses `CalculatorSix`; Compass uses `CompassSix`; Clock uses `ClockSix`; Calendar uses `CalendarSix`; Reminders uses `RemindersSix`. All require iOS 17 or later.
+Open `iOS6Apps.xcworkspace` at the collection root and select the app's scheme. Weather uses `WeatherSix`; Notes uses `NotesSix`; Calculator uses `CalculatorSix`; Compass uses `CompassSix`; Clock uses `ClockSix`; Calendar uses `CalendarSix`; Reminders uses `RemindersSix`; Camera uses `CameraSix`. All require iOS 17 or later.
 
 | App | Project | Documentation |
 | --- | --- | --- |
@@ -15,6 +15,7 @@ Open `iOS6Apps.xcworkspace` at the collection root and select the app's scheme. 
 | Clock | `apps/clock/ClockSix.xcodeproj` | [Run instructions](apps/clock/README.md), [Verification record](apps/clock/docs/verification.md) |
 | Calendar | `apps/calendar/CalendarSix.xcodeproj` | [Run instructions](apps/calendar/README.md), [Verification record](apps/calendar/docs/verification.md) |
 | Reminders | `apps/reminders/RemindersSix.xcodeproj` | [Run instructions](apps/reminders/README.md), [Verification record](apps/reminders/docs/verification.md) |
+| Camera | `apps/camera/CameraSix.xcodeproj` | [Run instructions](apps/camera/README.md), [Verification record](apps/camera/docs/verification.md) |
 
 Weather defaults to Celsius, and its app icon displays `23°`. Use Current Location requests foreground location access and loads live weather. If access was denied, Open Settings provides a recovery path. Set a simulated location using Simulator → Features → Location when running on Simulator.
 
@@ -30,6 +31,8 @@ Calendar recreates the blue-gray glossy chrome, embossed month grid, selected-da
 
 Reminders recreates the black pebbled leather, off-white paper, red list headings, double margin rules, square checkboxes, and dimensional controls of iOS 6. It includes persistent lists and reminders, completion history, search, manual ordering, date and location alerts, recurrence, priorities, notes, a seven-day date strip, and optional system Reminders accounts through EventKit. It follows Weather's English/Simplified Chinese language behavior. Launch with `--demo` for isolated sample lists; ordinary launches start with an empty local list.
 
+Camera recreates the silver viewfinder controls, oval metal shutter, black camera/video slider, blue focus rectangle, iris transition, options panel, and panorama guide of iOS 6. It uses AVFoundation for real photo/video capture, microphone audio, flash/torch, focus lock, zoom, HDR exposure bracketing, and motion-guided panoramas. Captures persist locally and can be saved to Photos. The camera roll supports browsing, playback, import, sharing/printing, and basic photo editing, with Weather-compatible English/Simplified Chinese language behavior. Simulator launches use clearly labeled original illustrated demo scenes.
+
 ## Shared design language
 
 Use the [shared iOS 6 design language](docs/design-language.md) where its patterns fit the screen. Applicable Notes, detail, management, and settings screens can extend the body color/texture through status and bottom safe areas while keeping navigation as an independent panel. Weather's main forecast retains its own original glass panel and paging layout. Specialized main screens do not need the Notes/settings frame; each app keeps its historical materials, typography, dimensional controls, and motion.
@@ -44,6 +47,14 @@ ios6-apps/
 ├── README.md
 ├── iOS6Apps.xcworkspace/
 ├── apps/
+│   ├── camera/
+│   │   ├── CameraSix.xcodeproj/
+│   │   ├── CameraSix/
+│   │   ├── CameraSixTests/
+│   │   ├── CameraSixUITests/
+│   │   ├── scripts/
+│   │   ├── docs/
+│   │   └── README.md
 │   ├── reminders/
 │   │   ├── RemindersSix.xcodeproj/
 │   │   ├── RemindersSix/
