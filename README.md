@@ -2,9 +2,11 @@
 
 A collection of native app recreations inspired by the skeuomorphic design of iOS 6. Each app has its own Xcode project, source, assets, tests, scripts, and documentation.
 
+Camera Roll and Photos compile their matching graphite navigation and glossy controls from [`shared/PhotoChrome`](shared/PhotoChrome/ClassicPhotoChrome.swift). Keep that directory alongside `apps/` when opening either independent project.
+
 ## Getting started
 
-Open `iOS6Apps.xcworkspace` at the collection root and select the app's scheme. Weather uses `WeatherSix`; Notes uses `NotesSix`; Calculator uses `CalculatorSix`; Compass uses `CompassSix`; Clock uses `ClockSix`; Calendar uses `CalendarSix`; Reminders uses `RemindersSix`; Camera uses `CameraSix`. All require iOS 17 or later.
+Open `iOS6Apps.xcworkspace` at the collection root and select the app's scheme. Weather uses `WeatherSix`; Notes uses `NotesSix`; Calculator uses `CalculatorSix`; Compass uses `CompassSix`; Clock uses `ClockSix`; Calendar uses `CalendarSix`; Reminders uses `RemindersSix`; Camera uses `CameraSix`; Photos uses `PhotosSix`. All require iOS 17 or later.
 
 | App | Project | Documentation |
 | --- | --- | --- |
@@ -16,6 +18,7 @@ Open `iOS6Apps.xcworkspace` at the collection root and select the app's scheme. 
 | Calendar | `apps/calendar/CalendarSix.xcodeproj` | [Run instructions](apps/calendar/README.md), [Verification record](apps/calendar/docs/verification.md) |
 | Reminders | `apps/reminders/RemindersSix.xcodeproj` | [Run instructions](apps/reminders/README.md), [Verification record](apps/reminders/docs/verification.md) |
 | Camera | `apps/camera/CameraSix.xcodeproj` | [Run instructions](apps/camera/README.md), [Verification record](apps/camera/docs/verification.md) |
+| Photos | `apps/photos/PhotosSix.xcodeproj` | [Run instructions](apps/photos/README.md), [Verification record](apps/photos/docs/verification.md) |
 
 Weather defaults to Celsius, and its app icon displays `23°`. Use Current Location requests foreground location access and loads live weather. If access was denied, Open Settings provides a recovery path. Set a simulated location using Simulator → Features → Location when running on Simulator.
 
@@ -33,6 +36,8 @@ Reminders recreates the black pebbled leather, off-white paper, red list heading
 
 Camera recreates the silver viewfinder controls, oval metal shutter, black camera/video slider, blue focus rectangle, iris transition, options panel, and panorama guide of iOS 6. It uses AVFoundation for real photo/video capture, microphone audio, flash/torch, focus lock, zoom, HDR exposure bracketing, and motion-guided panoramas. Captures persist locally and can be saved to Photos. The camera roll supports browsing, playback, import, sharing/printing, and basic photo editing, with Weather-compatible English/Simplified Chinese language behavior. Simulator launches use clearly labeled original illustrated demo scenes.
 
+Photos recreates the graphite metal navigation, compact white album rows, parenthesized counts, four-column portrait grid, black viewer, and Albums / Photo Stream / Places tabs of iOS 6. It uses the real system photo library for album organization, viewing, location browsing, sharing/printing, image editing, and video trimming. Edits preserve the original and save new copies. Photos and Camera share saved system assets and support bidirectional links to an exact capture. Photos follows Weather's English/Simplified Chinese language behavior; `--demo` uses isolated illustrated media. The retired My Photo Stream service is represented honestly through available iCloud Shared Albums and a service explanation.
+
 ## Shared design language
 
 Use the [shared iOS 6 design language](docs/design-language.md) where its patterns fit the screen. Applicable Notes, detail, management, and settings screens can extend the body color/texture through status and bottom safe areas while keeping navigation as an independent panel. Weather's main forecast retains its own original glass panel and paging layout. Specialized main screens do not need the Notes/settings frame; each app keeps its historical materials, typography, dimensional controls, and motion.
@@ -47,6 +52,14 @@ ios6-apps/
 ├── README.md
 ├── iOS6Apps.xcworkspace/
 ├── apps/
+│   ├── photos/
+│   │   ├── PhotosSix.xcodeproj/
+│   │   ├── PhotosSix/
+│   │   ├── PhotosSixTests/
+│   │   ├── PhotosSixUITests/
+│   │   ├── scripts/
+│   │   ├── docs/
+│   │   └── README.md
 │   ├── camera/
 │   │   ├── CameraSix.xcodeproj/
 │   │   ├── CameraSix/

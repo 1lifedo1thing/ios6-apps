@@ -5,6 +5,7 @@ import UniformTypeIdentifiers
 
 struct CameraRollView: View {
   @ObservedObject var library: MediaLibrary
+  @Environment(\.openURL) private var openURL
   let isDemo: Bool
   let dismiss: () -> Void
   @State private var selected: UUID?
@@ -14,6 +15,7 @@ struct CameraRollView: View {
   @State private var pickerOpen = false
   @State private var pickedItems: [PhotosPickerItem] = []
   @State private var importing = false
+  @State private var openingPhotos = false
   @State private var editorOpen = false
   @State private var controlsVisible = true
   @State private var photoScale: CGFloat = 1
@@ -22,28 +24,44 @@ struct CameraRollView: View {
 
   var body: some View {
     ZStack {
-      if selected == nil { Pinstripes().ignoresSafeArea() } else { Color.black.ignoresSafeArea() }
+      (selected == nil ? Color(white: 0.22) : Color.black).ignoresSafeArea()
       VStack(spacing: 0) {
         if controlsVisible || selected == nil {
-          ClassicNavigation(
+          ClassicPhotoNavigation(
             title: selected == nil ? L10n.text("Camera Roll") : title,
-            leading: selected == nil ? "Camera" : "Camera Roll",
-            action: {
+            dark: selected != nil, accessibilityTitle: fullTitle
+          ) {
+            Button {
               if selected == nil {
                 dismiss()
               } else {
                 selected = nil
                 photoScale = 1
               }
-            },
-            trailing: AnyView(trailing))
+            } label: {
+              HStack(spacing: 3) {
+                Image(systemName: "chevron.left")
+                Text(L10n.text(selected == nil ? "Camera" : "Camera Roll"))
+              }.lineLimit(1)
+            }.buttonStyle(ClassicPhotoButtonStyle())
+              .accessibilityIdentifier("navigation-back")
+          } trailing: {
+            HStack(spacing: 5) {
+              Button(L10n.text("Photos")) { openPhotos() }
+                .buttonStyle(ClassicPhotoButtonStyle())
+                .frame(minHeight: 44).accessibilityIdentifier("open-photos").disabled(
+                  openingPhotos)
+              trailing
+            }
+          }
         }
         if let current { detail(current) } else { grid }
         if let current, controlsVisible { toolbar(current) }
       }
       if importing {
-        ProgressView(L10n.text("Importing…")).padding(24).background(
-          .regularMaterial, in: RoundedRectangle(cornerRadius: 10))
+        Color.black.opacity(0.5).ignoresSafeArea()
+        ProgressView(L10n.text("Importing…")).tint(.white).foregroundStyle(.white)
+          .padding(24).background(Color(white: 0.12), in: RoundedRectangle(cornerRadius: 10))
       }
       if let deleteItem {
         ClassicCameraAlert(
@@ -66,7 +84,7 @@ struct CameraRollView: View {
         }
       }
     }
-    .preferredColorScheme(selected == nil ? .light : .dark)
+    .preferredColorScheme(.dark)
     .photosPicker(
       isPresented: $pickerOpen, selection: $pickedItems, maxSelectionCount: 20,
       matching: .any(of: [.images, .videos])
@@ -96,13 +114,18 @@ struct CameraRollView: View {
     guard let index = library.items.firstIndex(where: { $0.id == selected }) else {
       return L10n.text("Camera Roll")
     }
+    return L10n.format("%d / %d", index + 1, library.items.count)
+  }
+
+  private var fullTitle: String? {
+    guard let index = library.items.firstIndex(where: { $0.id == selected }) else { return nil }
     return L10n.format("%d of %d", index + 1, library.items.count)
   }
 
   @ViewBuilder private var trailing: some View {
     if let current, current.kind != .video {
       Button(L10n.text("Edit")) { editorOpen = true }.buttonStyle(
-        ChromeButtonStyle(dark: true, capsule: false)
+        ClassicPhotoButtonStyle()
       )
       .frame(minHeight: 44).accessibilityIdentifier("edit-photo")
     } else if selected == nil {
@@ -111,7 +134,7 @@ struct CameraRollView: View {
       } label: {
         Image(systemName: "plus").font(.system(size: 18, weight: .bold))
       }
-      .buttonStyle(ChromeButtonStyle(dark: true, capsule: false)).frame(minWidth: 44, minHeight: 44)
+      .buttonStyle(ClassicPhotoButtonStyle()).frame(minWidth: 44, minHeight: 44)
       .accessibilityLabel(L10n.text("Import from Photos"))
     }
   }
@@ -126,47 +149,55 @@ struct CameraRollView: View {
           Text(L10n.text("Photos and videos you take appear here.")).font(CameraTheme.font(16))
             .multilineTextAlignment(.center)
           Button(L10n.text("Import from Photos")) { pickerOpen = true }.buttonStyle(
-            ChromeButtonStyle())
+            ClassicPhotoButtonStyle())
         }.foregroundStyle(Color(white: 0.3)).padding(25).frame(
           maxWidth: .infinity, maxHeight: .infinity)
       } else {
-        ScrollView {
-          LazyVGrid(columns: [GridItem(.adaptive(minimum: 85), spacing: 4)], spacing: 4) {
-            ForEach(library.items) { item in
-              Button {
-                selected = item.id
-                controlsVisible = true
-              } label: {
-                ZStack(alignment: .bottomTrailing) {
-                  if let image = library.thumbnail(for: item) {
-                    Image(uiImage: image).resizable().scaledToFill()
-                  } else {
-                    Color(white: 0.1)
+        GeometryReader { geometry in
+          let columns = geometry.size.width > 600 ? 7 : 4
+          let size = max(
+            1, (geometry.size.width - 10 - CGFloat(columns - 1) * 4) / CGFloat(columns))
+          ScrollView {
+            LazyVGrid(
+              columns: Array(repeating: GridItem(.flexible(), spacing: 4), count: columns),
+              spacing: 4
+            ) {
+              ForEach(library.items) { item in
+                Button {
+                  selected = item.id
+                  controlsVisible = true
+                } label: {
+                  ZStack(alignment: .bottomTrailing) {
+                    if let image = library.thumbnail(for: item) {
+                      Image(uiImage: image).resizable().scaledToFill()
+                        .frame(width: size, height: size).clipped()
+                    } else {
+                      Color(white: 0.1)
+                    }
+                    if item.kind == .video {
+                      Image(systemName: "video.fill").font(.system(size: 13)).padding(4).background(
+                        .black.opacity(0.65))
+                    } else if item.isHDR {
+                      Text("HDR").font(CameraTheme.font(10, bold: true)).padding(3).background(
+                        .black.opacity(0.6))
+                    }
                   }
-                  if item.kind == .video {
-                    Image(systemName: "video.fill").font(.system(size: 13)).padding(4).background(
-                      .black.opacity(0.65))
-                  } else if item.isHDR {
-                    Text("HDR").font(CameraTheme.font(10, bold: true)).padding(3).background(
-                      .black.opacity(0.6))
-                  }
-                }
-                .frame(height: 85).clipped().foregroundStyle(.white)
-                .overlay(Rectangle().stroke(.white.opacity(0.9)))
-              }.buttonStyle(.plain)
-                .accessibilityLabel(
-                  L10n.text(
-                    item.kind == .video ? "Video" : item.kind == .panorama ? "Panorama" : "Photo")
-                    + ", " + AppLanguage.current.timestamp(item.createdAt)
-                )
-                .accessibilityIdentifier("media-" + item.id.uuidString)
-            }
-          }.padding(5)
-          Text(L10n.itemCount(library.items.count)).font(CameraTheme.font(16, bold: true))
-            .foregroundStyle(Color(white: 0.4)).padding(16).accessibilityIdentifier("media-count")
+                  .frame(width: size, height: size).clipped().foregroundStyle(.white)
+                }.buttonStyle(.plain)
+                  .accessibilityLabel(
+                    L10n.text(
+                      item.kind == .video ? "Video" : item.kind == .panorama ? "Panorama" : "Photo")
+                      + ", " + AppLanguage.current.timestamp(item.createdAt)
+                  )
+                  .accessibilityIdentifier("media-" + item.id.uuidString)
+              }
+            }.padding(5)
+            Text(L10n.itemCount(library.items.count)).font(CameraTheme.font(16, bold: true))
+              .foregroundStyle(Color(white: 0.4)).padding(16).accessibilityIdentifier("media-count")
+          }
         }
       }
-    }
+    }.background(Color.white, ignoresSafeAreaEdges: [])
   }
 
   @ViewBuilder private func detail(_ item: CapturedMedia) -> some View {
@@ -225,7 +256,9 @@ struct CameraRollView: View {
         }
       }
       toolbarButton("trash", "Delete", identifier: "delete-media") { deleteItem = item }
-    }.padding(.horizontal, 7).frame(height: 48).foregroundStyle(.white).background(CameraTheme.blue)
+    }.padding(.horizontal, 7).frame(height: 44).foregroundStyle(.white)
+      .background(ClassicPhotoChrome.black, ignoresSafeAreaEdges: [])
+      .overlay(alignment: .top) { Color.white.opacity(0.25).frame(height: 1) }
   }
 
   private func toolbarButton(
@@ -244,6 +277,26 @@ struct CameraRollView: View {
     if library.items.indices.contains(next) {
       selected = library.items[next].id
       photoScale = 1
+    }
+  }
+
+  private func openPhotos() {
+    guard UIApplication.shared.canOpenURL(library.photosURL(for: nil)) else {
+      message = "Install PhotosSix to browse the system photo library."
+      return
+    }
+    let item = current
+    openingPhotos = true
+    Task {
+      defer { openingPhotos = false }
+      do {
+        if let item { try await library.saveToPhotos(item) }
+        openURL(library.photosURL(for: item))
+      } catch LibraryError.permissionDenied {
+        message = "Allow Photos access in Settings to save this item."
+      } catch {
+        message = "Saving to Photos failed. Please try again."
+      }
     }
   }
 

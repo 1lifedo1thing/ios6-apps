@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>NSPhotoLibraryUsageDescription</key><string>Photos displays your photos, videos, albums, and saved locations, and lets you organize and edit them.</string>
+<key>NSPhotoLibraryAddUsageDescription</key><string>Photos saves edited photos and trimmed videos to your photo library.</string>
+<key>PHPhotoLibraryPreventAutomaticLimitedAccessAlert</key><true/>
+<key>CFBundleURLTypes</key><array><dict><key>CFBundleURLName</key><string>com.yinyueyang.photossix</string><key>CFBundleURLSchemes</key><array><string>photossix</string></array></dict></array>
+<key>LSApplicationQueriesSchemes</key><array><string>camerasix</string></array>
+<key>UIApplicationSupportsIndirectInputEvents</key><true/>
+</dict></plist>

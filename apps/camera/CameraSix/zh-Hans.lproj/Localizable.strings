@@ -1,3 +1,4 @@
+"%d / %d" = "%d / %d";
 "%d item" = "%d 个项目";
 "%d items" = "%d 个项目";
 "%d of %d" = "第 %d 个，共 %d 个";
@@ -32,6 +33,7 @@
 "HDR combines three exposures. Keep iPhone steady. Flash is disabled while HDR is on." = "HDR 合成三张不同曝光的照片。请保持 iPhone 稳定。启用 HDR 时闪光灯会关闭。";
 "Import from Photos" = "从照片导入";
 "Importing…" = "正在导入…";
+"Install PhotosSix to browse the system photo library." = "请安装 PhotosSix 以浏览系统照片图库。";
 "Keep Normal Photo" = "保留正常曝光照片";
 "Keep the arrow on the line and pan slowly." = "保持箭头沿着横线，缓慢移动。";
 "Left to right" = "从左向右";
@@ -52,6 +54,7 @@
 "Permissions" = "权限";
 "Photo" = "照片";
 "Photo mode" = "照片模式";
+"Photos" = "照片";
 "Photos and videos you take appear here." = "拍摄的照片和视频将显示在这里。";
 "Previous" = "上一张";
 "Record video" = "开始录像";

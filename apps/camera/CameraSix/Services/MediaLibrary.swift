@@ -11,6 +11,7 @@ struct CapturedMedia: Identifiable, Codable, Equatable {
   let createdAt: Date
   var isHDR: Bool
   var savedToPhotos = false
+  var photoAssetIdentifier: String?
 }
 
 @MainActor
@@ -110,16 +111,29 @@ final class MediaLibrary: ObservableObject {
     }
     guard status == .authorized || status == .limited else { throw LibraryError.permissionDenied }
     let fileURL = url(for: item)
+    var assetIdentifier: String?
     try await PHPhotoLibrary.shared().performChanges {
       let request = PHAssetCreationRequest.forAsset()
       request.creationDate = item.createdAt
       request.addResource(
         with: item.kind == .video ? .video : .photo, fileURL: fileURL, options: nil)
+      assetIdentifier = request.placeholderForCreatedAsset?.localIdentifier
     }
     if let index = items.firstIndex(where: { $0.id == item.id }) {
       items[index].savedToPhotos = true
+      items[index].photoAssetIdentifier = assetIdentifier
     }
     try saveIndex()
+  }
+
+  func photosURL(for item: CapturedMedia?) -> URL {
+    var components = URLComponents()
+    components.scheme = "photossix"
+    components.host = "library"
+    if let item, let id = items.first(where: { $0.id == item.id })?.photoAssetIdentifier {
+      components.queryItems = [URLQueryItem(name: "asset", value: id)]
+    }
+    return components.url!
   }
 
   func removeLocal(_ item: CapturedMedia) throws {

@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+archiveVersion = "1";
+classes = {
+
+};
+objectVersion = "77";
+objects = {
+6ACC04C6CE6AC999D8C320EE = {
+isa = "PBXFileSystemSynchronizedRootGroup";
+path = "PhotosSix";
+sourceTree = "<group>";
+exceptions = ("D1E54DCD6B98E50E3C382E96");
+};
+D1E54DCD6B98E50E3C382E96 = {
+isa = "PBXFileSystemSynchronizedBuildFileExceptionSet";
+membershipExceptions = ("Info.plist");
+target = "254C4B4A09C55AFA2D5CA411";
+};
+F1279B043F2FB0B256355328 = {
+isa = "PBXFileReference";
+explicitFileType = "wrapper.application";
+path = "PhotosSix.app";
+sourceTree = "BUILT_PRODUCTS_DIR";
+};
+F11142481E2F4BBA4D140585 = {
+isa = "PBXSourcesBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+FFBDAAB847ABB3AE1F0C1FFF = {
+isa = "PBXFrameworksBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+3C07A5CADDB37D0778E8C675 = {
+isa = "PBXResourcesBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+6B90FAF0915E2C95F85128F2 = {
+isa = "PBXFileSystemSynchronizedRootGroup";
+path = "../../shared/PhotoChrome";
+sourceTree = "<group>";
+};
+421987F985634A4A869F5F3F = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+SDKROOT = "iphoneos";
+SWIFT_VERSION = "5.0";
+CLANG_ENABLE_MODULES = "YES";
+CLANG_ENABLE_OBJC_ARC = "YES";
+ENABLE_USER_SCRIPT_SANDBOXING = "YES";
+CODE_SIGN_STYLE = "Automatic";
+TARGETED_DEVICE_FAMILY = "1";
+GENERATE_INFOPLIST_FILE = "YES";
+MARKETING_VERSION = "1.0";
+CURRENT_PROJECT_VERSION = "1";
+PRODUCT_NAME = "$(TARGET_NAME)";
+PRODUCT_BUNDLE_IDENTIFIER = "com.yinyueyang.photossix";
+SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+DEBUG_INFORMATION_FORMAT = "dwarf";
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+ENABLE_TESTABILITY = "YES";
+ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon";
+DEVELOPMENT_TEAM = "7768G8T96V";
+INFOPLIST_FILE = "PhotosSix/Info.plist";
+INFOPLIST_KEY_CFBundleDisplayName = "Photos";
+INFOPLIST_KEY_UILaunchScreen_Generation = "YES";
+INFOPLIST_KEY_UIStatusBarStyle = "UIStatusBarStyleDarkContent";
+INFOPLIST_KEY_UIUserInterfaceStyle = "Light";
+INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+};
+name = "Debug";
+};
+910B2239E07C382ED54ECDB2 = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+SDKROOT = "iphoneos";
+SWIFT_VERSION = "5.0";
+CLANG_ENABLE_MODULES = "YES";
+CLANG_ENABLE_OBJC_ARC = "YES";
+ENABLE_USER_SCRIPT_SANDBOXING = "YES";
+CODE_SIGN_STYLE = "Automatic";
+TARGETED_DEVICE_FAMILY = "1";
+GENERATE_INFOPLIST_FILE = "YES";
+MARKETING_VERSION = "1.0";
+CURRENT_PROJECT_VERSION = "1";
+PRODUCT_NAME = "$(TARGET_NAME)";
+PRODUCT_BUNDLE_IDENTIFIER = "com.yinyueyang.photossix";
+SWIFT_OPTIMIZATION_LEVEL = "-O";
+DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon";
+DEVELOPMENT_TEAM = "7768G8T96V";
+INFOPLIST_FILE = "PhotosSix/Info.plist";
+INFOPLIST_KEY_CFBundleDisplayName = "Photos";
+INFOPLIST_KEY_UILaunchScreen_Generation = "YES";
+INFOPLIST_KEY_UIStatusBarStyle = "UIStatusBarStyleDarkContent";
+INFOPLIST_KEY_UIUserInterfaceStyle = "Light";
+INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+};
+name = "Release";
+};
+75CF89C52511B8570F1B766F = {
+isa = "XCConfigurationList";
+buildConfigurations = ("421987F985634A4A869F5F3F", "910B2239E07C382ED54ECDB2");
+defaultConfigurationIsVisible = "0";
+defaultConfigurationName = "Release";
+};
+254C4B4A09C55AFA2D5CA411 = {
+isa = "PBXNativeTarget";
+buildConfigurationList = "75CF89C52511B8570F1B766F";
+buildPhases = ("F11142481E2F4BBA4D140585", "FFBDAAB847ABB3AE1F0C1FFF", "3C07A5CADDB37D0778E8C675");
+buildRules = ();
+dependencies = ();
+fileSystemSynchronizedGroups = ("6ACC04C6CE6AC999D8C320EE", "6B90FAF0915E2C95F85128F2");
+name = "PhotosSix";
+productName = "PhotosSix";
+productReference = "F1279B043F2FB0B256355328";
+productType = "com.apple.product-type.application";
+};
+1F13B976F4892BC09A66C2DC = {
+isa = "PBXFileSystemSynchronizedRootGroup";
+path = "PhotosSixTests";
+sourceTree = "<group>";
+};
+5C78AB54D8AAC140EB9019D3 = {
+isa = "PBXFileReference";
+explicitFileType = "wrapper.cfbundle";
+path = "PhotosSixTests.xctest";
+sourceTree = "BUILT_PRODUCTS_DIR";
+};
+74F2EEF59DA44C9A82B05B28 = {
+isa = "PBXSourcesBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+EE5759797D7E31A9AF901153 = {
+isa = "PBXFrameworksBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+64850386EF528473C04CDA49 = {
+isa = "PBXResourcesBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+EA64695048D12E9859E376EA = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+SDKROOT = "iphoneos";
+SWIFT_VERSION = "5.0";
+CLANG_ENABLE_MODULES = "YES";
+CLANG_ENABLE_OBJC_ARC = "YES";
+ENABLE_USER_SCRIPT_SANDBOXING = "YES";
+CODE_SIGN_STYLE = "Automatic";
+TARGETED_DEVICE_FAMILY = "1";
+GENERATE_INFOPLIST_FILE = "YES";
+MARKETING_VERSION = "1.0";
+CURRENT_PROJECT_VERSION = "1";
+PRODUCT_NAME = "$(TARGET_NAME)";
+PRODUCT_BUNDLE_IDENTIFIER = "com.yinyueyang.photossixtests";
+SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+DEBUG_INFORMATION_FORMAT = "dwarf";
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+ENABLE_TESTABILITY = "YES";
+TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotosSix.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PhotosSix";
+BUNDLE_LOADER = "$(TEST_HOST)";
+};
+name = "Debug";
+};
+B16884106938A33FDA51EE88 = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+SDKROOT = "iphoneos";
+SWIFT_VERSION = "5.0";
+CLANG_ENABLE_MODULES = "YES";
+CLANG_ENABLE_OBJC_ARC = "YES";
+ENABLE_USER_SCRIPT_SANDBOXING = "YES";
+CODE_SIGN_STYLE = "Automatic";
+TARGETED_DEVICE_FAMILY = "1";
+GENERATE_INFOPLIST_FILE = "YES";
+MARKETING_VERSION = "1.0";
+CURRENT_PROJECT_VERSION = "1";
+PRODUCT_NAME = "$(TARGET_NAME)";
+PRODUCT_BUNDLE_IDENTIFIER = "com.yinyueyang.photossixtests";
+SWIFT_OPTIMIZATION_LEVEL = "-O";
+DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotosSix.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PhotosSix";
+BUNDLE_LOADER = "$(TEST_HOST)";
+};
+name = "Release";
+};
+D8D76CBC25577A772E7D8F9D = {
+isa = "XCConfigurationList";
+buildConfigurations = ("EA64695048D12E9859E376EA", "B16884106938A33FDA51EE88");
+defaultConfigurationIsVisible = "0";
+defaultConfigurationName = "Release";
+};
+5E73BB32B4A95820EFB16839 = {
+isa = "PBXContainerItemProxy";
+containerPortal = "98F54143AB4E86B28C3AFEE0";
+proxyType = "1";
+remoteGlobalIDString = "254C4B4A09C55AFA2D5CA411";
+remoteInfo = "PhotosSix";
+};
+32CA7E53DE41DD7DBC849F6D = {
+isa = "PBXTargetDependency";
+target = "254C4B4A09C55AFA2D5CA411";
+targetProxy = "5E73BB32B4A95820EFB16839";
+};
+760324C9731DC1246CFF586D = {
+isa = "PBXNativeTarget";
+buildConfigurationList = "D8D76CBC25577A772E7D8F9D";
+buildPhases = ("74F2EEF59DA44C9A82B05B28", "EE5759797D7E31A9AF901153", "64850386EF528473C04CDA49");
+buildRules = ();
+dependencies = ("32CA7E53DE41DD7DBC849F6D");
+fileSystemSynchronizedGroups = ("1F13B976F4892BC09A66C2DC");
+name = "PhotosSixTests";
+productName = "PhotosSixTests";
+productReference = "5C78AB54D8AAC140EB9019D3";
+productType = "com.apple.product-type.bundle.unit-test";
+};
+2EEEF912BB2B6F485F2C9BD0 = {
+isa = "PBXFileSystemSynchronizedRootGroup";
+path = "PhotosSixUITests";
+sourceTree = "<group>";
+};
+DF60991BDAE71C0CFDCBDE1F = {
+isa = "PBXFileReference";
+explicitFileType = "wrapper.cfbundle";
+path = "PhotosSixUITests.xctest";
+sourceTree = "BUILT_PRODUCTS_DIR";
+};
+F9043A803DB1F4E420A2FCD1 = {
+isa = "PBXSourcesBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+DE681CC9C6EF3310214D2545 = {
+isa = "PBXFrameworksBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+0711C35AAE8272C41AC31F36 = {
+isa = "PBXResourcesBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+796596723943BFBDD37680FD = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+SDKROOT = "iphoneos";
+SWIFT_VERSION = "5.0";
+CLANG_ENABLE_MODULES = "YES";
+CLANG_ENABLE_OBJC_ARC = "YES";
+ENABLE_USER_SCRIPT_SANDBOXING = "YES";
+CODE_SIGN_STYLE = "Automatic";
+TARGETED_DEVICE_FAMILY = "1";
+GENERATE_INFOPLIST_FILE = "YES";
+MARKETING_VERSION = "1.0";
+CURRENT_PROJECT_VERSION = "1";
+PRODUCT_NAME = "$(TARGET_NAME)";
+PRODUCT_BUNDLE_IDENTIFIER = "com.yinyueyang.photossixuitests";
+SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+DEBUG_INFORMATION_FORMAT = "dwarf";
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+ENABLE_TESTABILITY = "YES";
+TEST_TARGET_NAME = "PhotosSix";
+};
+name = "Debug";
+};
+958E3553AB2D29F1A280D2B6 = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+SDKROOT = "iphoneos";
+SWIFT_VERSION = "5.0";
+CLANG_ENABLE_MODULES = "YES";
+CLANG_ENABLE_OBJC_ARC = "YES";
+ENABLE_USER_SCRIPT_SANDBOXING = "YES";
+CODE_SIGN_STYLE = "Automatic";
+TARGETED_DEVICE_FAMILY = "1";
+GENERATE_INFOPLIST_FILE = "YES";
+MARKETING_VERSION = "1.0";
+CURRENT_PROJECT_VERSION = "1";
+PRODUCT_NAME = "$(TARGET_NAME)";
+PRODUCT_BUNDLE_IDENTIFIER = "com.yinyueyang.photossixuitests";
+SWIFT_OPTIMIZATION_LEVEL = "-O";
+DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+TEST_TARGET_NAME = "PhotosSix";
+};
+name = "Release";
+};
+073E268CBC37C9FC58B5365A = {
+isa = "XCConfigurationList";
+buildConfigurations = ("796596723943BFBDD37680FD", "958E3553AB2D29F1A280D2B6");
+defaultConfigurationIsVisible = "0";
+defaultConfigurationName = "Release";
+};
+DD25E489DE64AEF9E4FD304E = {
+isa = "PBXContainerItemProxy";
+containerPortal = "98F54143AB4E86B28C3AFEE0";
+proxyType = "1";
+remoteGlobalIDString = "254C4B4A09C55AFA2D5CA411";
+remoteInfo = "PhotosSix";
+};
+78EEC308F32E644EC7CFC310 = {
+isa = "PBXTargetDependency";
+target = "254C4B4A09C55AFA2D5CA411";
+targetProxy = "DD25E489DE64AEF9E4FD304E";
+};
+1633F6B7C397C57AFCDE5F87 = {
+isa = "PBXNativeTarget";
+buildConfigurationList = "073E268CBC37C9FC58B5365A";
+buildPhases = ("F9043A803DB1F4E420A2FCD1", "DE681CC9C6EF3310214D2545", "0711C35AAE8272C41AC31F36");
+buildRules = ();
+dependencies = ("78EEC308F32E644EC7CFC310");
+fileSystemSynchronizedGroups = ("2EEEF912BB2B6F485F2C9BD0");
+name = "PhotosSixUITests";
+productName = "PhotosSixUITests";
+productReference = "DF60991BDAE71C0CFDCBDE1F";
+productType = "com.apple.product-type.bundle.ui-testing";
+};
+FBDC4F23F93125BBEEAE800C = {
+isa = "PBXGroup";
+children = ("F1279B043F2FB0B256355328", "5C78AB54D8AAC140EB9019D3", "DF60991BDAE71C0CFDCBDE1F");
+name = "Products";
+sourceTree = "<group>";
+};
+B28B7AF69320201D1CF206EB = {
+isa = "PBXGroup";
+children = ("6ACC04C6CE6AC999D8C320EE", "6B90FAF0915E2C95F85128F2", "1F13B976F4892BC09A66C2DC", "2EEEF912BB2B6F485F2C9BD0", "FBDC4F23F93125BBEEAE800C");
+sourceTree = "<group>";
+};
+ED8772ADEC3A6C25161BC957 = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+ALWAYS_SEARCH_USER_PATHS = "NO";
+CLANG_WARN_DOCUMENTATION_COMMENTS = "YES";
+GCC_WARN_UNUSED_VARIABLE = "YES";
+};
+name = "Debug";
+};
+00F209874A1F7309F6DCEAA7 = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+ALWAYS_SEARCH_USER_PATHS = "NO";
+CLANG_WARN_DOCUMENTATION_COMMENTS = "YES";
+GCC_WARN_UNUSED_VARIABLE = "YES";
+};
+name = "Release";
+};
+640DC9EFD529235A8D9E2727 = {
+isa = "XCConfigurationList";
+buildConfigurations = ("ED8772ADEC3A6C25161BC957", "00F209874A1F7309F6DCEAA7");
+defaultConfigurationIsVisible = "0";
+defaultConfigurationName = "Release";
+};
+98F54143AB4E86B28C3AFEE0 = {
+isa = "PBXProject";
+attributes = {
+BuildIndependentTargetsInParallel = "YES";
+LastUpgradeCheck = "2700";
+TargetAttributes = {
+254C4B4A09C55AFA2D5CA411 = {
+CreatedOnToolsVersion = "27.0";
+};
+760324C9731DC1246CFF586D = {
+CreatedOnToolsVersion = "27.0";
+};
+1633F6B7C397C57AFCDE5F87 = {
+CreatedOnToolsVersion = "27.0";
+};
+};
+};
+buildConfigurationList = "640DC9EFD529235A8D9E2727";
+compatibilityVersion = "Xcode 16.0";
+developmentRegion = "en";
+hasScannedForEncodings = "0";
+knownRegions = ("en", "zh-Hans", "zh-Hant", "zh", "Base");
+mainGroup = "B28B7AF69320201D1CF206EB";
+productRefGroup = "FBDC4F23F93125BBEEAE800C";
+projectDirPath = "";
+projectRoot = "";
+targets = ("254C4B4A09C55AFA2D5CA411", "760324C9731DC1246CFF586D", "1633F6B7C397C57AFCDE5F87");
+preferredProjectObjectVersion = "77";
+};
+};
+rootObject = "98F54143AB4E86B28C3AFEE0";
+}

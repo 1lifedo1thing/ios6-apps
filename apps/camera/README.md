@@ -28,7 +28,15 @@ Captured JPEGs/MOVs, thumbnails, and an atomic JSON index persist in the app's A
 
 The app-owned camera roll supports a thumbnail grid, full-screen photos, pinch zoom, previous/next/swipe navigation, video playback, original-file sharing, and AirPrint through the system share sheet. Photo edits (rotate, auto-enhance, centered 4:3 crop, revert) save a new JPEG and preserve the original. Deletion removes only the local app copy, after a clear confirmation; Photos copies are kept.
 
+Camera Roll matches PhotosSix: graphite metal navigation, black glossy controls, a white four-column portrait grid (seven columns on wide displays), and black viewer/editor panels. Both projects compile the same [photo chrome source](../../shared/PhotoChrome/ClassicPhotoChrome.swift), including 44-point navigation and matching button typography. The roll keeps its direct Camera return and Photos link. Its graphite safe-area background switches to black in the viewer; the system owns status content.
+
 The plus button opens Apple's privacy-preserving Photos picker for importing selected photos/videos. The app does not silently enumerate the entire system photo library. Apple manages permission dialogs, the Photos picker, video playback controls, sharing, and AirPrint. Photo editing is limited to the listed tools; red-eye retouching and video trimming from the separate historical Photos app are outside this camera recreation. Location tagging, Photo Stream/iCloud sync, and lock-screen replacement are not implemented.
+
+## PhotosSix integration
+
+PhotosSix reads the system Photos library, so CameraSix captures appear there when **Save to Photos** is enabled (the default). Local-only captures remain available in CameraSix until saved. The Photos button in Camera Roll opens PhotosSix; with a selected item it first saves that item if needed, then opens the exact PhotoKit asset. Saving persists an optional `photoAssetIdentifier` in the existing local index; older indexes remain readable and repeated saves still avoid duplicate assets.
+
+PhotosSix opens the viewfinder through `camerasix://capture?returnTo=photos`; CameraSix handles that link by closing its local roll and resuming capture. The reverse link is `photossix://library?asset=<local identifier>`. A missing companion app or denied saving permission has a recovery message. PhotosSix's selected-photo permission may need to include the newly captured asset. No App Group is required.
 
 ## Language
 

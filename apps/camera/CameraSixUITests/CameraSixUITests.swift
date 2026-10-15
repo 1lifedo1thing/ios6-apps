@@ -68,9 +68,12 @@ final class CameraSixUITests: XCTestCase {
     app.buttons["shutter"].tap()
     app.buttons["camera-roll"].tap()
     XCTAssertTrue(app.staticTexts["2 items"].waitForExistence(timeout: 8))
+    capture("roll-english-grid")
     app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH 'media-'")).firstMatch.tap()
     XCTAssertTrue(app.images["photo-detail"].waitForExistence(timeout: 5))
+    capture("roll-english-viewer")
     app.buttons["edit-photo"].tap()
+    capture("roll-english-editor")
     app.buttons["editor-rotate"].tap()
     app.buttons["editor-crop 4:3"].tap()
     app.buttons["Save"].tap()
@@ -117,6 +120,16 @@ final class CameraSixUITests: XCTestCase {
     XCTAssertTrue(app.buttons["camera-roll"].isEnabled)
     app.buttons["camera-roll"].tap()
     XCTAssertTrue(app.staticTexts["3 个项目"].waitForExistence(timeout: 8))
+    capture("roll-chinese-grid")
+    XCUIDevice.shared.orientation = .landscapeLeft
+    let photosReady = XCTNSPredicateExpectation(
+      predicate: NSPredicate(format: "hittable == true"), object: app.buttons["open-photos"])
+    XCTAssertEqual(XCTWaiter.wait(for: [photosReady], timeout: 5), .completed)
+    XCTAssertTrue(app.buttons["navigation-back"].isHittable)
+    capture("roll-chinese-landscape")
+    XCUIDevice.shared.orientation = .portrait
+    app.buttons["navigation-back"].tap()
+    XCTAssertTrue(app.buttons["shutter"].waitForExistence(timeout: 5))
   }
 
   @MainActor
@@ -162,6 +175,7 @@ final class CameraSixUITests: XCTestCase {
     XCTAssertTrue(app.buttons["shutter"].isEnabled)
     app.otherElements["viewfinder"].swipeRight()
     XCTAssertTrue(app.staticTexts["没有照片或视频"].waitForExistence(timeout: 5))
+    capture("roll-chinese-empty")
     app.buttons["navigation-back"].tap()
     XCTAssertTrue(app.buttons["shutter"].waitForExistence(timeout: 5))
   }

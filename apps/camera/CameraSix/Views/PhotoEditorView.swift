@@ -13,11 +13,14 @@ struct PhotoEditorView: View {
     ZStack {
       Color.black.ignoresSafeArea()
       VStack(spacing: 0) {
-        ClassicNavigation(
-          title: L10n.text("Edit Photo"), leading: "Cancel", action: { completion(nil) },
-          trailing: AnyView(
-            Button(L10n.text("Save")) { save() }
-              .buttonStyle(ChromeButtonStyle(dark: true, capsule: false)).frame(minHeight: 44)))
+        ClassicPhotoNavigation(title: L10n.text("Edit Photo"), dark: true) {
+          Button(L10n.text("Cancel")) { completion(nil) }
+            .buttonStyle(ClassicPhotoButtonStyle())
+            .accessibilityIdentifier("navigation-back")
+        } trailing: {
+          Button(L10n.text("Save")) { save() }
+            .buttonStyle(ClassicPhotoButtonStyle(primary: true)).frame(minHeight: 44)
+        }
         if let image {
           Image(uiImage: displayImage(image)).resizable().scaledToFit()
             .frame(maxWidth: .infinity, maxHeight: .infinity).accessibilityIdentifier(
@@ -39,7 +42,9 @@ struct PhotoEditorView: View {
             crop = false
             enhanced = false
           }
-        }.padding(.horizontal, 12).frame(height: 52).background(CameraTheme.blue)
+        }.padding(.horizontal, 12).frame(height: 52)
+          .background(ClassicPhotoChrome.black, ignoresSafeAreaEdges: [])
+          .overlay(alignment: .top) { Color.white.opacity(0.25).frame(height: 1) }
       }
     }.preferredColorScheme(.dark)
       .onAppear {

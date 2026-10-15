@@ -1,3 +1,4 @@
+"%d / %d" = "%d / %d";
 "%d item" = "%d item";
 "%d items" = "%d items";
 "%d of %d" = "%d of %d";
@@ -32,6 +33,7 @@
 "HDR combines three exposures. Keep iPhone steady. Flash is disabled while HDR is on." = "HDR combines three exposures. Keep iPhone steady. Flash is disabled while HDR is on.";
 "Import from Photos" = "Import from Photos";
 "Importing…" = "Importing…";
+"Install PhotosSix to browse the system photo library." = "Install PhotosSix to browse the system photo library.";
 "Keep Normal Photo" = "Keep Normal Photo";
 "Keep the arrow on the line and pan slowly." = "Keep the arrow on the line and pan slowly.";
 "Left to right" = "Left to right";
@@ -52,6 +54,7 @@
 "Permissions" = "Permissions";
 "Photo" = "Photo";
 "Photo mode" = "Photo mode";
+"Photos" = "Photos";
 "Photos and videos you take appear here." = "Photos and videos you take appear here.";
 "Previous" = "Previous";
 "Record video" = "Record video";

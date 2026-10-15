@@ -41,6 +41,11 @@ buildActionMask = "2147483647";
 files = ();
 runOnlyForDeploymentPostprocessing = "0";
 };
+319C7527D141DCB102A128C2 = {
+isa = "PBXFileSystemSynchronizedRootGroup";
+path = "../../shared/PhotoChrome";
+sourceTree = "<group>";
+};
 73E73DCB45E32240E045A4A0 = {
 isa = "XCBuildConfiguration";
 buildSettings = {
@@ -113,7 +118,7 @@ buildConfigurationList = "D7AC44CF15E22A913D46E774";
 buildPhases = ("8796B7C6222A495E652BCC5F", "EAF60903CDF408076B2C604D", "B8E6126AC002092FDF2E9311");
 buildRules = ();
 dependencies = ();
-fileSystemSynchronizedGroups = ("ADAEE7CE79CFCF5E003999B3");
+fileSystemSynchronizedGroups = ("ADAEE7CE79CFCF5E003999B3", "319C7527D141DCB102A128C2");
 name = "CameraSix";
 productName = "CameraSix";
 productReference = "947EC4CA5FD2F7CC020FCC2C";
@@ -339,7 +344,7 @@ sourceTree = "<group>";
 };
 B28B7AF69320201D1CF206EB = {
 isa = "PBXGroup";
-children = ("ADAEE7CE79CFCF5E003999B3", "75BDA1D1568B7A7D99849E7C", "2C6F4FC9F297E95ABCFEDE2E", "FBDC4F23F93125BBEEAE800C");
+children = ("ADAEE7CE79CFCF5E003999B3", "319C7527D141DCB102A128C2", "75BDA1D1568B7A7D99849E7C", "2C6F4FC9F297E95ABCFEDE2E", "FBDC4F23F93125BBEEAE800C");
 sourceTree = "<group>";
 };
 ED8772ADEC3A6C25161BC957 = {

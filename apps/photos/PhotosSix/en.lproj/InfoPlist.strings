@@ -1,0 +1,3 @@
+"CFBundleDisplayName" = "Photos";
+"NSPhotoLibraryAddUsageDescription" = "Photos saves edited photos and trimmed videos to your photo library.";
+"NSPhotoLibraryUsageDescription" = "Photos displays your photos, videos, albums, and saved locations, and lets you organize and edit them.";

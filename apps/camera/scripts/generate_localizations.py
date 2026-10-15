@@ -5,7 +5,10 @@ import json
 
 ROOT = Path(__file__).resolve().parent.parent / "CameraSix"
 TRANSLATIONS = {
-"%d item": "%d 个项目", "%d items": "%d 个项目", "%d of %d": "第 %d 个，共 %d 个",
+"Photos": "照片",
+"Install PhotosSix to browse the system photo library.": "请安装 PhotosSix 以浏览系统照片图库。",
+"%d item": "%d 个项目", "%d items": "%d 个项目", "%d / %d": "%d / %d",
+    "%d of %d": "第 %d 个，共 %d 个",
 "A local copy is always kept in Camera Roll. Photos permission is requested when saving.": "拍摄结果始终保留在相机胶卷中。保存至系统照片时才会请求照片权限。",
 "AE/AF Lock": "自动曝光/自动对焦锁定", "Auto": "自动", "Auto-enhance": "自动增强",
 "Back camera": "后置摄像头", "Camera": "相机", "Camera Roll": "相机胶卷", "Camera Settings": "相机设置",

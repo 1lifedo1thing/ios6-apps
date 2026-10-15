@@ -1,0 +1,9 @@
+{
+  "authorized": true,
+  "demo": false,
+  "passed": true,
+  "photoDecode": true,
+  "photoEditJPEG": true,
+  "platform": "physical",
+  "videoTrim": true
+}

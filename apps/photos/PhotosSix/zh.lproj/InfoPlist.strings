@@ -1,0 +1,3 @@
+"CFBundleDisplayName" = "照片";
+"NSPhotoLibraryAddUsageDescription" = "照片需要将编辑后的照片和修剪的视频保存到你的照片图库。";
+"NSPhotoLibraryUsageDescription" = "照片需要访问你的照片、视频、相簿和保存的位置，以便浏览、整理和编辑。";

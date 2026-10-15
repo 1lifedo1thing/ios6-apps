@@ -58,6 +58,11 @@ for name, product_type, extension in [
     product = add(name + "-product", isa="PBXFileReference", explicitFileType="wrapper.application" if extension == "app" else "wrapper.cfbundle", path=f"{name}.{extension}", sourceTree="BUILT_PRODUCTS_DIR")
     products.append(product)
     phases = [add(name + "-" + phase, isa="PBX" + phase + "BuildPhase", buildActionMask="2147483647", files=[], runOnlyForDeploymentPostprocessing="0") for phase in ["Sources", "Frameworks", "Resources"]]
+    synchronized_groups = [group]
+    if name == "CameraSix":
+        photo_chrome = add(name + "-photo-chrome", isa="PBXFileSystemSynchronizedRootGroup", path="../../shared/PhotoChrome", sourceTree="<group>")
+        groups.append(photo_chrome)
+        synchronized_groups.append(photo_chrome)
     configs = []
     for configuration in ["Debug", "Release"]:
         settings = dict(common, PRODUCT_BUNDLE_IDENTIFIER=f"com.yinyueyang.{name.lower()}")
@@ -86,7 +91,7 @@ for name, product_type, extension in [
     if name != "CameraSix":
         proxy = add(name + "-proxy", isa="PBXContainerItemProxy", containerPortal=identifier("project"), proxyType="1", remoteGlobalIDString=app_id, remoteInfo="CameraSix")
         dependencies.append(add(name + "-dependency", isa="PBXTargetDependency", target=app_id, targetProxy=proxy))
-    targets.append(add(name + "-target", isa="PBXNativeTarget", buildConfigurationList=config_list, buildPhases=phases, buildRules=[], dependencies=dependencies, fileSystemSynchronizedGroups=[group], name=name, productName=name, productReference=product, productType="com.apple.product-type." + product_type))
+    targets.append(add(name + "-target", isa="PBXNativeTarget", buildConfigurationList=config_list, buildPhases=phases, buildRules=[], dependencies=dependencies, fileSystemSynchronizedGroups=synchronized_groups, name=name, productName=name, productReference=product, productType="com.apple.product-type." + product_type))
 
 product_group = add("products", isa="PBXGroup", children=products, name="Products", sourceTree="<group>")
 main_group = add("main", isa="PBXGroup", children=groups + [product_group], sourceTree="<group>")

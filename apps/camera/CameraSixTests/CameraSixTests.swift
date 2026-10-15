@@ -6,6 +6,32 @@ import XCTest
 @testable import CameraSix
 
 final class CameraSixTests: XCTestCase {
+  @MainActor
+  func testLegacyIndexAndPhotosAssetLinkSurviveReopen() async throws {
+    let directory = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
+    defer { try? FileManager.default.removeItem(at: directory) }
+    let library = MediaLibrary(directory: directory)
+    let image = testImage()
+    let item = try await library.addPhoto(try XCTUnwrap(image.jpegData(compressionQuality: 0.9)))
+    let indexURL = directory.appendingPathComponent("index.json")
+    var rows = try XCTUnwrap(
+      JSONSerialization.jsonObject(with: Data(contentsOf: indexURL)) as? [[String: Any]])
+    rows[0].removeValue(forKey: "photoAssetIdentifier")
+    try JSONSerialization.data(withJSONObject: rows).write(to: indexURL)
+    let legacy = MediaLibrary(directory: directory)
+    XCTAssertNil(legacy.items.first?.photoAssetIdentifier)
+    XCTAssertEqual(legacy.photosURL(for: item).absoluteString, "photossix://library")
+    rows[0]["savedToPhotos"] = true
+    rows[0]["photoAssetIdentifier"] = "PHOTO-IDENTIFIER/001"
+    try JSONSerialization.data(withJSONObject: rows).write(to: indexURL)
+    let reopened = MediaLibrary(directory: directory)
+    let url = reopened.photosURL(for: item)
+    XCTAssertEqual(
+      URLComponents(url: url, resolvingAgainstBaseURL: false)?.queryItems?.first?.value,
+      "PHOTO-IDENTIFIER/001")
+    XCTAssertTrue(reopened.items[0].savedToPhotos)
+  }
+
   func testLanguageVariantsAndFallback() {
     for language in ["zh-Hans", "zh-Hant", "zh-TW", "zh-HK", "ZH-cn"] {
       XCTAssertEqual(AppLanguage.preferred([language]), .chinese)

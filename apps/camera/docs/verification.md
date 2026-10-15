@@ -101,3 +101,34 @@ Signed device build and strict signature verification passed. The updated icon w
 ## Scope and remaining manual checks
 
 The HDR and panorama engines use public APIs and original processing, not Apple's private algorithms. Image registration/fusion and panorama UI are tested, and a real hand-held sweep and Photos save were verified. LED brightness/torch, physical volume-button shutter, AirPrint output, and comprehensive photo-quality assessment still require manual hardware checks and are not inferred from simulator success or the capture files. Camera Roll contains app captures and selected Photos imports; it does not silently enumerate all system photos. Separate historical Photos tools such as video trimming/red-eye editing, geotagging, Photo Stream, and system lock-screen replacement are outside the implemented scope.
+
+
+## PhotosSix bridge verification — 2026-10-15
+
+The local media index now preserves an optional PhotoKit asset identifier. A compatibility regression confirms that an older index without this field remains readable and that persisted identifiers round-trip through the PhotosSix URL. All 10 CameraSix unit/switch/processing tests passed on iPhone Air/iOS 26.2.
+
+The installed simulator pair passed capture → save to the system library → open the exact asset in PhotosSix → return to the CameraSix viewfinder. The test also starts PhotosSix in demo mode and verifies its switch to the actual system library. See the [PhotosSix verification record](../../photos/docs/verification.md) and [capture screenshot](../../photos/docs/screenshots/camera-capture-in-photos.png).
+
+The updated CameraSix was signed and installed on the physical iPhone Air/iOS 27.0.1. Earlier independent startup was verified; the PhotosSix record distinguishes device processing checks from simulator interaction coverage. No production media was deleted.
+
+## Matching PhotosSix chrome — 2026-10-15
+
+Camera Roll now uses the same shared SwiftUI photo chrome as PhotosSix, compiled directly from `shared/PhotoChrome/ClassicPhotoChrome.swift` in both independent projects. Its grid has graphite metal navigation, glossy black buttons, four square portrait columns (seven on wide displays), a white content surface, and graphite above and below the content. Viewer and editor navigation/toolbars use the matching black gradients and black safe areas. Video/HDR markers stay inside square thumbnails. Camera return, import, editing, local-only deletion, and the exact-asset Photos link remain available.
+
+The English HDR/gallery/edit/save/persistence/delete workflow and Chinese video/still/panorama/landscape/return workflow passed on iPhone Air/iOS 26.2 and iPhone SE/iOS 17.5. Air also passed the existing focus/settings/empty-roll recovery workflow. The first new landscape assertion ran during rotation; waiting for the Photos button to become hittable resolved the test synchronization failure, and subsequent Air and SE checks passed. After the final thumbnail-marker correction, the Chinese workflow passed again on both devices.
+
+PhotosSix's browse/edit/slideshow/share workflow and the capture → save → exact PhotosSix asset → CameraSix return integration passed with the shared chrome on Air. Both apps passed signed physical-device builds and were updated in place on iPhone Air/iOS 27.0.1. After the user confirmed unlock, each final app launched successfully through `devicectl`, independently of Xcode. Physical startup is verified; the redesigned roll's touch/visual flows were inspected in Simulator, rather than inferred from installation. No personal media was deleted.
+
+Final fixture captures: [Chinese grid](screenshots/photos-style/air/roll-chinese-grid.png), [landscape](screenshots/photos-style/air/roll-chinese-landscape.png), [English viewer](screenshots/photos-style/air/roll-english-viewer.png), [editor](screenshots/photos-style/air/roll-english-editor.png), [empty roll](screenshots/photos-style/air/roll-chinese-empty.png), and [compact grid](screenshots/photos-style/se/roll-english-grid.png). The live Air roll is also available through the existing `serve-sim` side-browser session.
+
+Result bundles are retained in the host's XcodeBuildMCP `ios6-apps-5274783ae1de/result-bundles/` directory: Air gallery/empty checks `test_sim_2026-10-15T12-26-24-141Z_pid90370_c8813a56.xcresult` (two passed; initial rotation assertion failed); Air synchronized Chinese `test_sim_2026-10-15T12-28-56-134Z_pid90370_62b71378.xcresult`; SE two workflows `test_sim_2026-10-15T12-29-26-974Z_pid90370_ae215a0b.xcresult`; Photos and bridge `test_sim_2026-10-15T12-31-02-762Z_pid90370_f00aa91e.xcresult`; final marker checks Air `test_sim_2026-10-15T12-32-37-027Z_pid90370_b42a7fae.xcresult` and SE `test_sim_2026-10-15T12-33-10-031Z_pid90370_31374ee9.xcresult`. Resource validation, strict Swift formatting, and whitespace checks passed.
+
+## Navigation button bezel correction — 2026-10-15
+
+Full-resolution screenshots exposed a drawing defect in the shared black buttons: a straight highlight painted over the top outer border stopped short of each rounded corner, leaving two dark discontinuities. The shared button now draws a continuous inset rounded highlight beneath the outer border. The fill, outline, and highlight share the same circular rounded shape; all strokes stay within its bounds. This applies to Camera Roll, its editor, and PhotosSix. Camera's separate silver viewfinder buttons were inspected at native resolution and retain their existing curved bevel.
+
+Native-pixel evidence: [before](screenshots/button-bezel/camera-roll-before.png), [after](screenshots/button-bezel/camera-roll-after.png), with the full fixture captures alongside them. Air/iOS 26.2 passed the existing HDR/gallery/edit/save/persistence/deletion workflow (`test_sim_2026-10-15T12-40-49-048Z_pid90370_c4637f77.xcresult`). PhotosSix passed its Chinese settings/landscape workflow on SE/iOS 17.5 (`test_sim_2026-10-15T12-42-04-263Z_pid90370_b27c3dbe.xcresult`). Both updated signed apps installed in place and launched independently on the physical iPhone. Strict Swift formatting and resource/whitespace validation passed. Browser inspection confirmed the live PhotosSix frame.
+
+## Adaptive photo counters — 2026-10-15
+
+The shared photo navigation measures both side groups instead of reserving a fixed title inset. Camera Roll displays compact `index / total` counters and keeps the full localized ordinal as its accessibility label. The Air HDR/gallery/edit/save/persistence/deletion workflow passed (`test_sim_2026-10-15T13-10-19-279Z_pid90370_02e4a1a9.xcresult`), and the updated pair passed the exact-asset PhotosSix bridge. The signed CameraSix update installed in place; a later foreground recheck encountered device auto-lock. See [PhotosSix large-library validation](../../photos/docs/verification.md#large-libraries-counters-and-browsing-position--2026-10-15) for compact/large-count layout and scrolling evidence.

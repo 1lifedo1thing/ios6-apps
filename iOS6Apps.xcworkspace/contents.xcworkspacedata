@@ -16,4 +16,6 @@
    </FileRef>
    <FileRef location="group:apps/camera/CameraSix.xcodeproj">
    </FileRef>
+   <FileRef location="group:apps/photos/PhotosSix.xcodeproj">
+   </FileRef>
 </Workspace>
