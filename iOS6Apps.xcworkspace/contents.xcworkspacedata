@@ -18,4 +18,6 @@
    </FileRef>
    <FileRef location="group:apps/photos/PhotosSix.xcodeproj">
    </FileRef>
+   <FileRef location="group:apps/maps/MapsSix.xcodeproj">
+   </FileRef>
 </Workspace>

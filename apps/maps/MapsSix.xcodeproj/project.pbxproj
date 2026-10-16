@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+archiveVersion = "1";
+classes = {
+
+};
+objectVersion = "77";
+objects = {
+AB11BBA05112F7065A2AECEC = {
+isa = "PBXFileSystemSynchronizedRootGroup";
+path = "MapsSix";
+sourceTree = "<group>";
+exceptions = ("8CDFD1BD5014D1344DEEA828");
+};
+8CDFD1BD5014D1344DEEA828 = {
+isa = "PBXFileSystemSynchronizedBuildFileExceptionSet";
+membershipExceptions = ("Info.plist");
+target = "9D6E10C7570B9799BDF597E4";
+};
+E7594FA4D259B7DEB65A985F = {
+isa = "PBXFileReference";
+explicitFileType = "wrapper.application";
+path = "MapsSix.app";
+sourceTree = "BUILT_PRODUCTS_DIR";
+};
+4D1CA70B36C94613F8F173AF = {
+isa = "PBXSourcesBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+FD515171A7BDD93355FAD4BE = {
+isa = "PBXFrameworksBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+2A71CB03C2B5080AF3AFB92C = {
+isa = "PBXResourcesBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+F7081B9D3B6AE8D8EF621487 = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+SDKROOT = "iphoneos";
+SWIFT_VERSION = "5.0";
+CLANG_ENABLE_MODULES = "YES";
+CLANG_ENABLE_OBJC_ARC = "YES";
+ENABLE_USER_SCRIPT_SANDBOXING = "YES";
+CODE_SIGN_STYLE = "Automatic";
+TARGETED_DEVICE_FAMILY = "1";
+GENERATE_INFOPLIST_FILE = "YES";
+MARKETING_VERSION = "1.0";
+CURRENT_PROJECT_VERSION = "11";
+PRODUCT_NAME = "$(TARGET_NAME)";
+PRODUCT_BUNDLE_IDENTIFIER = "com.yinyueyang.mapssix";
+SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+DEBUG_INFORMATION_FORMAT = "dwarf";
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+ENABLE_TESTABILITY = "YES";
+ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon";
+DEVELOPMENT_TEAM = "7768G8T96V";
+INFOPLIST_FILE = "MapsSix/Info.plist";
+INFOPLIST_KEY_CFBundleDisplayName = "Maps";
+INFOPLIST_KEY_UILaunchScreen_Generation = "YES";
+INFOPLIST_KEY_UIStatusBarStyle = "UIStatusBarStyleDefault";
+INFOPLIST_KEY_UIUserInterfaceStyle = "Light";
+INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+};
+name = "Debug";
+};
+644A8704571B6371822AD2AA = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+SDKROOT = "iphoneos";
+SWIFT_VERSION = "5.0";
+CLANG_ENABLE_MODULES = "YES";
+CLANG_ENABLE_OBJC_ARC = "YES";
+ENABLE_USER_SCRIPT_SANDBOXING = "YES";
+CODE_SIGN_STYLE = "Automatic";
+TARGETED_DEVICE_FAMILY = "1";
+GENERATE_INFOPLIST_FILE = "YES";
+MARKETING_VERSION = "1.0";
+CURRENT_PROJECT_VERSION = "11";
+PRODUCT_NAME = "$(TARGET_NAME)";
+PRODUCT_BUNDLE_IDENTIFIER = "com.yinyueyang.mapssix";
+SWIFT_OPTIMIZATION_LEVEL = "-O";
+DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon";
+DEVELOPMENT_TEAM = "7768G8T96V";
+INFOPLIST_FILE = "MapsSix/Info.plist";
+INFOPLIST_KEY_CFBundleDisplayName = "Maps";
+INFOPLIST_KEY_UILaunchScreen_Generation = "YES";
+INFOPLIST_KEY_UIStatusBarStyle = "UIStatusBarStyleDefault";
+INFOPLIST_KEY_UIUserInterfaceStyle = "Light";
+INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+};
+name = "Release";
+};
+BC8D76B57E7435EC769FA9C1 = {
+isa = "XCConfigurationList";
+buildConfigurations = ("F7081B9D3B6AE8D8EF621487", "644A8704571B6371822AD2AA");
+defaultConfigurationIsVisible = "0";
+defaultConfigurationName = "Release";
+};
+9D6E10C7570B9799BDF597E4 = {
+isa = "PBXNativeTarget";
+buildConfigurationList = "BC8D76B57E7435EC769FA9C1";
+buildPhases = ("4D1CA70B36C94613F8F173AF", "FD515171A7BDD93355FAD4BE", "2A71CB03C2B5080AF3AFB92C");
+buildRules = ();
+dependencies = ();
+fileSystemSynchronizedGroups = ("AB11BBA05112F7065A2AECEC");
+name = "MapsSix";
+productName = "MapsSix";
+productReference = "E7594FA4D259B7DEB65A985F";
+productType = "com.apple.product-type.application";
+};
+6F22B1F076BC0BE91FF0B313 = {
+isa = "PBXFileSystemSynchronizedRootGroup";
+path = "MapsSixTests";
+sourceTree = "<group>";
+};
+7169FA07F1E3B45795E8F6CF = {
+isa = "PBXFileReference";
+explicitFileType = "wrapper.cfbundle";
+path = "MapsSixTests.xctest";
+sourceTree = "BUILT_PRODUCTS_DIR";
+};
+CA4FBC99EEFB22C5D1614A50 = {
+isa = "PBXSourcesBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+66E2A94F2349C1E383AB2966 = {
+isa = "PBXFrameworksBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+A692AC56D47813C61BD163EC = {
+isa = "PBXResourcesBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+A446E52DF3C4F0471CAADE17 = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+SDKROOT = "iphoneos";
+SWIFT_VERSION = "5.0";
+CLANG_ENABLE_MODULES = "YES";
+CLANG_ENABLE_OBJC_ARC = "YES";
+ENABLE_USER_SCRIPT_SANDBOXING = "YES";
+CODE_SIGN_STYLE = "Automatic";
+TARGETED_DEVICE_FAMILY = "1";
+GENERATE_INFOPLIST_FILE = "YES";
+MARKETING_VERSION = "1.0";
+CURRENT_PROJECT_VERSION = "11";
+PRODUCT_NAME = "$(TARGET_NAME)";
+PRODUCT_BUNDLE_IDENTIFIER = "com.yinyueyang.mapssixtests";
+SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+DEBUG_INFORMATION_FORMAT = "dwarf";
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+ENABLE_TESTABILITY = "YES";
+TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapsSix.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MapsSix";
+BUNDLE_LOADER = "$(TEST_HOST)";
+};
+name = "Debug";
+};
+5D57FD31B99AB67C5521A49E = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+SDKROOT = "iphoneos";
+SWIFT_VERSION = "5.0";
+CLANG_ENABLE_MODULES = "YES";
+CLANG_ENABLE_OBJC_ARC = "YES";
+ENABLE_USER_SCRIPT_SANDBOXING = "YES";
+CODE_SIGN_STYLE = "Automatic";
+TARGETED_DEVICE_FAMILY = "1";
+GENERATE_INFOPLIST_FILE = "YES";
+MARKETING_VERSION = "1.0";
+CURRENT_PROJECT_VERSION = "11";
+PRODUCT_NAME = "$(TARGET_NAME)";
+PRODUCT_BUNDLE_IDENTIFIER = "com.yinyueyang.mapssixtests";
+SWIFT_OPTIMIZATION_LEVEL = "-O";
+DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapsSix.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MapsSix";
+BUNDLE_LOADER = "$(TEST_HOST)";
+};
+name = "Release";
+};
+D583D22347CEE0124CBB6865 = {
+isa = "XCConfigurationList";
+buildConfigurations = ("A446E52DF3C4F0471CAADE17", "5D57FD31B99AB67C5521A49E");
+defaultConfigurationIsVisible = "0";
+defaultConfigurationName = "Release";
+};
+0FA8538E09E3BA6EBBBADF14 = {
+isa = "PBXContainerItemProxy";
+containerPortal = "98F54143AB4E86B28C3AFEE0";
+proxyType = "1";
+remoteGlobalIDString = "9D6E10C7570B9799BDF597E4";
+remoteInfo = "MapsSix";
+};
+85678854C99629C51E25CB94 = {
+isa = "PBXTargetDependency";
+target = "9D6E10C7570B9799BDF597E4";
+targetProxy = "0FA8538E09E3BA6EBBBADF14";
+};
+7D87DE8C404AD9E3F961505E = {
+isa = "PBXNativeTarget";
+buildConfigurationList = "D583D22347CEE0124CBB6865";
+buildPhases = ("CA4FBC99EEFB22C5D1614A50", "66E2A94F2349C1E383AB2966", "A692AC56D47813C61BD163EC");
+buildRules = ();
+dependencies = ("85678854C99629C51E25CB94");
+fileSystemSynchronizedGroups = ("6F22B1F076BC0BE91FF0B313");
+name = "MapsSixTests";
+productName = "MapsSixTests";
+productReference = "7169FA07F1E3B45795E8F6CF";
+productType = "com.apple.product-type.bundle.unit-test";
+};
+18191B942E72D1AFEDFE6CA0 = {
+isa = "PBXFileSystemSynchronizedRootGroup";
+path = "MapsSixUITests";
+sourceTree = "<group>";
+};
+7EE25B1A12B26EA6F5C1DB46 = {
+isa = "PBXFileReference";
+explicitFileType = "wrapper.cfbundle";
+path = "MapsSixUITests.xctest";
+sourceTree = "BUILT_PRODUCTS_DIR";
+};
+D2E9E5D803303BFE04BE0FF9 = {
+isa = "PBXSourcesBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+CABD21E2DC90ECC9A488A417 = {
+isa = "PBXFrameworksBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+03916C7A44A1CC4461050E7A = {
+isa = "PBXResourcesBuildPhase";
+buildActionMask = "2147483647";
+files = ();
+runOnlyForDeploymentPostprocessing = "0";
+};
+616174932E8D5D1EBE3A2D46 = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+SDKROOT = "iphoneos";
+SWIFT_VERSION = "5.0";
+CLANG_ENABLE_MODULES = "YES";
+CLANG_ENABLE_OBJC_ARC = "YES";
+ENABLE_USER_SCRIPT_SANDBOXING = "YES";
+CODE_SIGN_STYLE = "Automatic";
+TARGETED_DEVICE_FAMILY = "1";
+GENERATE_INFOPLIST_FILE = "YES";
+MARKETING_VERSION = "1.0";
+CURRENT_PROJECT_VERSION = "11";
+PRODUCT_NAME = "$(TARGET_NAME)";
+PRODUCT_BUNDLE_IDENTIFIER = "com.yinyueyang.mapssixuitests";
+SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+DEBUG_INFORMATION_FORMAT = "dwarf";
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+ENABLE_TESTABILITY = "YES";
+TEST_TARGET_NAME = "MapsSix";
+};
+name = "Debug";
+};
+EB7506D3D6A231FA546CED47 = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+SDKROOT = "iphoneos";
+SWIFT_VERSION = "5.0";
+CLANG_ENABLE_MODULES = "YES";
+CLANG_ENABLE_OBJC_ARC = "YES";
+ENABLE_USER_SCRIPT_SANDBOXING = "YES";
+CODE_SIGN_STYLE = "Automatic";
+TARGETED_DEVICE_FAMILY = "1";
+GENERATE_INFOPLIST_FILE = "YES";
+MARKETING_VERSION = "1.0";
+CURRENT_PROJECT_VERSION = "11";
+PRODUCT_NAME = "$(TARGET_NAME)";
+PRODUCT_BUNDLE_IDENTIFIER = "com.yinyueyang.mapssixuitests";
+SWIFT_OPTIMIZATION_LEVEL = "-O";
+DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+TEST_TARGET_NAME = "MapsSix";
+};
+name = "Release";
+};
+092225D0C50BAFA8B4B9AE21 = {
+isa = "XCConfigurationList";
+buildConfigurations = ("616174932E8D5D1EBE3A2D46", "EB7506D3D6A231FA546CED47");
+defaultConfigurationIsVisible = "0";
+defaultConfigurationName = "Release";
+};
+A10348BCBA4DBE2B81B9FF80 = {
+isa = "PBXContainerItemProxy";
+containerPortal = "98F54143AB4E86B28C3AFEE0";
+proxyType = "1";
+remoteGlobalIDString = "9D6E10C7570B9799BDF597E4";
+remoteInfo = "MapsSix";
+};
+B5BB813B027FE2789A9682DC = {
+isa = "PBXTargetDependency";
+target = "9D6E10C7570B9799BDF597E4";
+targetProxy = "A10348BCBA4DBE2B81B9FF80";
+};
+04230AFE45E8286F2FD6C07C = {
+isa = "PBXNativeTarget";
+buildConfigurationList = "092225D0C50BAFA8B4B9AE21";
+buildPhases = ("D2E9E5D803303BFE04BE0FF9", "CABD21E2DC90ECC9A488A417", "03916C7A44A1CC4461050E7A");
+buildRules = ();
+dependencies = ("B5BB813B027FE2789A9682DC");
+fileSystemSynchronizedGroups = ("18191B942E72D1AFEDFE6CA0");
+name = "MapsSixUITests";
+productName = "MapsSixUITests";
+productReference = "7EE25B1A12B26EA6F5C1DB46";
+productType = "com.apple.product-type.bundle.ui-testing";
+};
+FBDC4F23F93125BBEEAE800C = {
+isa = "PBXGroup";
+children = ("E7594FA4D259B7DEB65A985F", "7169FA07F1E3B45795E8F6CF", "7EE25B1A12B26EA6F5C1DB46");
+name = "Products";
+sourceTree = "<group>";
+};
+B28B7AF69320201D1CF206EB = {
+isa = "PBXGroup";
+children = ("AB11BBA05112F7065A2AECEC", "6F22B1F076BC0BE91FF0B313", "18191B942E72D1AFEDFE6CA0", "FBDC4F23F93125BBEEAE800C");
+sourceTree = "<group>";
+};
+ED8772ADEC3A6C25161BC957 = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+ALWAYS_SEARCH_USER_PATHS = "NO";
+CLANG_WARN_DOCUMENTATION_COMMENTS = "YES";
+GCC_WARN_UNUSED_VARIABLE = "YES";
+};
+name = "Debug";
+};
+00F209874A1F7309F6DCEAA7 = {
+isa = "XCBuildConfiguration";
+buildSettings = {
+ALWAYS_SEARCH_USER_PATHS = "NO";
+CLANG_WARN_DOCUMENTATION_COMMENTS = "YES";
+GCC_WARN_UNUSED_VARIABLE = "YES";
+};
+name = "Release";
+};
+640DC9EFD529235A8D9E2727 = {
+isa = "XCConfigurationList";
+buildConfigurations = ("ED8772ADEC3A6C25161BC957", "00F209874A1F7309F6DCEAA7");
+defaultConfigurationIsVisible = "0";
+defaultConfigurationName = "Release";
+};
+98F54143AB4E86B28C3AFEE0 = {
+isa = "PBXProject";
+attributes = {
+BuildIndependentTargetsInParallel = "YES";
+LastUpgradeCheck = "2700";
+TargetAttributes = {
+9D6E10C7570B9799BDF597E4 = {
+CreatedOnToolsVersion = "27.0";
+};
+7D87DE8C404AD9E3F961505E = {
+CreatedOnToolsVersion = "27.0";
+};
+04230AFE45E8286F2FD6C07C = {
+CreatedOnToolsVersion = "27.0";
+};
+};
+};
+buildConfigurationList = "640DC9EFD529235A8D9E2727";
+compatibilityVersion = "Xcode 16.0";
+developmentRegion = "en";
+hasScannedForEncodings = "0";
+knownRegions = ("en", "zh-Hans", "Base");
+mainGroup = "B28B7AF69320201D1CF206EB";
+productRefGroup = "FBDC4F23F93125BBEEAE800C";
+projectDirPath = "";
+projectRoot = "";
+targets = ("9D6E10C7570B9799BDF597E4", "7D87DE8C404AD9E3F961505E", "04230AFE45E8286F2FD6C07C");
+preferredProjectObjectVersion = "77";
+};
+};
+rootObject = "98F54143AB4E86B28C3AFEE0";
+}

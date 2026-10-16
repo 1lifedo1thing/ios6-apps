@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>NSLocationWhenInUseUsageDescription</key>
+  <string>Maps uses your location to show your position, find nearby places, and guide you along a route while the app is open.</string>
+</dict></plist>
